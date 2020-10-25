@@ -1,16 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-se" viewBox="0 0 640 480">
-  <defs>
-    <clipPath id="a">
-      <path fill-opacity=".7" d="M-53.4 0h682.6v512H-53.4z"/>
-    </clipPath>
-  </defs>
-  <g clip-path="url(#a)" transform="translate(50) scale(.9375)">
-    <g fill-rule="evenodd" stroke-width="1pt">
-      <path fill="#006aa7" d="M-121.1.3h256v204.8h-256zm0 306.9h256V512h-256z"/>
-      <path fill="#fecc00" d="M-121.1 205h256v102.4h-256z"/>
-      <path fill="#fecc00" d="M133.8 0h102.4v512H133.8z"/>
-      <path fill="#fecc00" d="M233 205h460.8v102.4H233z"/>
-      <path fill="#006aa7" d="M236.2 307.2H697V512H236.2zm0-306.9H697v204.8H236.2z"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#ffda44"/><path fill="#0052b4" d="M200.3 222.6h309.5A256 256 0 0 0 256 0a256.9 256.9 0 0 0-55.7 6v216.6zm-66.7 0V31.1A256.2 256.2 0 0 0 2.2 222.6h131.4zm0 66.8H2.2a256.2 256.2 0 0 0 131.4 191.5V289.4zm66.7 0v216.5A256.9 256.9 0 0 0 256 512a256 256 0 0 0 253.8-222.6H200.3z"/></svg>

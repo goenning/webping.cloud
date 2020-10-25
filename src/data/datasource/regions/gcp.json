@@ -46,7 +46,7 @@
             "display_name": "Sydney",
             "country": "AU",
             "location": "Sydney",
-            "continent": "Asia",
+            "continent": "Oceania",
             "ping_url": "http://35.189.6.113/ping"
         },
         {
@@ -68,7 +68,7 @@
         {
             "key": "europe-west2",
             "display_name": "London",
-            "country": "GB",
+            "country": "UK",
             "location": "London",
             "continent": "Europe",
             "ping_url": "http://35.189.67.146/ping"

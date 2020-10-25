@@ -1,10 +1,19 @@
+import theme from '@chakra-ui/theme'
 import { AppProps } from 'next/app'
-import './global.css'
+import { ChakraProvider, CSSReset, Box } from '@chakra-ui/core'
+import React from 'react'
 
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
-    <div className="max-w-screen-xl mx-auto grid grid-cols-1 row-gap-16 px-4 py-4 sm:px-6 sm:py-12 lg:px-8">
-      <Component {...pageProps} />
-    </div>
+    <ChakraProvider theme={theme}>
+      <CSSReset />
+      <Box>
+        <Box maxW="100%" mb={20}>
+          <Box as="main" minH="72vh" pt={8} px={5} mt="4rem">
+            <Component {...pageProps} />
+          </Box>
+        </Box>
+      </Box>
+    </ChakraProvider>
   )
 }

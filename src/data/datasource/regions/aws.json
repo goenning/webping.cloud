@@ -70,7 +70,7 @@
             "display_name": "Asia Pacific (Sydney)",
             "country": "AU",
             "location": "Sydney",
-            "continent": "Asia",
+            "continent": "Oceania",
             "ping_url": "http://dynamodb.ap-southeast-2.amazonaws.com/ping"
         },
         {
@@ -124,7 +124,7 @@
         {
             "key": "eu-west-2",
             "display_name": "EU (London)",
-            "country": "GB",
+            "country": "UK",
             "location": "London",
             "continent": "Europe",
             "ping_url": "http://dynamodb.eu-west-2.amazonaws.com/ping"

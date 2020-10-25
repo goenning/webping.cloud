@@ -1,5 +1,5 @@
 {
-    "url": "http://azure.microsoft.com/en-us/global-infrastructure/",
+    "url": "https://azure.microsoft.com/en-us/global-infrastructure/geographies/",
     "regions": [
         {
             "key": "eastasia",
@@ -22,7 +22,7 @@
             "display_name": "Australia East",
             "country": "AU",
             "location": "New South Wales",
-            "continent": "Asia",
+            "continent": "Oceania",
             "ping_url": "http://astaustraliaeast.blob.core.windows.net/public/latency-test.json"
         },
         {
@@ -30,7 +30,7 @@
             "display_name": "Australia Southeast",
             "country": "AU",
             "location": "Victoria",
-            "continent": "Asia",
+            "continent": "Oceania",
             "ping_url": "http://astaustraliasoutheast.blob.core.windows.net/public/latency-test.json"
         },
         {
@@ -38,7 +38,7 @@
             "display_name": "Australia Central",
             "country": "AU",
             "location": "Canberra",
-            "continent": "Asia",
+            "continent": "Oceania",
             "ping_url": "http://astaustraliacentral.blob.core.windows.net/public/latency-test.json"
         },
         {
@@ -46,7 +46,7 @@
             "display_name": "Australia Central 2",
             "country": "AU",
             "location": "Canberra",
-            "continent": "Asia",
+            "continent": "Oceania",
             "ping_url": "http://astaustraliacentral2.blob.core.windows.net/public/latency-test.json"
         },
         {
@@ -54,32 +54,28 @@
             "display_name": "China East",
             "country": "CN",
             "location": "Shanghai",
-            "continent": "Asia",
-            "ping_url": "http://astchinaeast.blob.core.windows.net/public/latency-test.json"
+            "continent": "Asia"
         },
         {
             "key": "chinanorth",
             "display_name": "China North",
             "country": "CN",
             "location": "Beijing",
-            "continent": "Asia",
-            "ping_url": "http://astchinanorth.blob.core.windows.net/public/latency-test.json"
+            "continent": "Asia"
         },
         {
             "key": "chinaeast2",
             "display_name": "China East 2",
             "country": "CN",
             "location": "Shanghai",
-            "continent": "Asia",
-            "ping_url": "http://astchinaeast2.blob.core.windows.net/public/latency-test.json"
+            "continent": "Asia"
         },
         {
             "key": "chinanorth2",
             "display_name": "China North 2",
             "country": "CN",
             "location": "Beijing",
-            "continent": "Asia",
-            "ping_url": "http://astchinanorth2.blob.core.windows.net/public/latency-test.json"
+            "continent": "Asia"
         },
         {
             "key": "centralindia",
@@ -167,13 +163,12 @@
             "display_name": "France South",
             "country": "FR",
             "location": "Marseille",
-            "continent": "Europe",
-            "ping_url": "http://astfrancesouth.blob.core.windows.net/public/latency-test.json"
+            "continent": "Europe"
         },
         {
             "key": "ukwest",
             "display_name": "UK West",
-            "country": "GB",
+            "country": "UK",
             "location": "Cardiff",
             "continent": "Europe",
             "ping_url": "http://astukwest.blob.core.windows.net/public/latency-test.json"
@@ -181,26 +176,26 @@
         {
             "key": "uksouth",
             "display_name": "UK South",
-            "country": "GB",
+            "country": "UK",
             "location": "London",
             "continent": "Europe",
             "ping_url": "http://astuksouth.blob.core.windows.net/public/latency-test.json"
         },
         {
-            "key": "germanycentral",
-            "display_name": "Germany Central",
+            "key": "germanywestcentral",
+            "display_name": "Germany West Central",
             "country": "DE",
             "location": "Frankfurt",
             "continent": "Europe",
-            "ping_url": "http://astgermanycentral.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astgermanywestcentral.blob.core.windows.net/public/latency-test.json"
         },
         {
-            "key": "germanynortheast",
-            "display_name": "Germany Northeast",
+            "key": "germanynorth",
+            "display_name": "Germany North",
             "country": "DE",
-            "location": "Magdeburg",
+            "location": "Berlin",
             "continent": "Europe",
-            "ping_url": "http://astgermanynortheast.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astgermanynorth.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "eastus",
