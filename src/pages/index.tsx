@@ -1,16 +1,66 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
+import { CloudProvider, CloudRegion, getAllCloudRegions, getAllProviders } from '../data'
+import { GetStaticPropsResult } from 'next'
 
-export default function Home(): JSX.Element {
+interface HomeProps {
+  providers: CloudProvider[]
+  regions: Record<string, CloudRegion[]>
+}
+
+interface RegionLatency {
+  provider: CloudRegion
+  region: CloudProvider
+  meanLatency: number
+}
+
+async function ping(url: string): Promise<number> {
+  return new Promise((resolve) => {
+    const img = document.getElementById('url-ping') as HTMLImageElement
+    const start = new Date().getTime()
+    img.onload = () => {
+      resolve(new Date().getTime() - start)
+    }
+    img.onerror = img.onload
+    img.src = url
+  })
+}
+
+export async function getStaticProps(): Promise<GetStaticPropsResult<HomeProps>> {
+  const providers = getAllProviders()
+  const regions = getAllCloudRegions()
+
+  return {
+    props: {
+      providers,
+      regions,
+    },
+  }
+}
+
+export default function Home(props: HomeProps): JSX.Element {
+  const [latencyState, setLatencyState] = useState<Record<string, RegionLatency>>({})
+  useEffect(() => {
+    console.log('Hi')
+  }, [])
+
   return (
     <>
       <Head>
-        <title>Sumbit9</title>
+        <title>Sumbit</title>
       </Head>
 
-      <div className="p-4 shadow rounded bg-white">
-        <h1 className="text-purple-500 leading-normal">Next.js</h1>
-        <p className="text-gray-500">with Tailwind CSS</p>
+      <div>
+        {props.providers.map((p) => (
+          <React.Fragment key={p.key}>
+            {props.regions[p.key].map((r) => (
+              <div key={r.key}>
+                {p.display_name} &middot; {r.display_name}
+              </div>
+            ))}
+          </React.Fragment>
+        ))}
+        <img style={{ display: 'none' }} id="url-ping" alt="ping"></img>
       </div>
     </>
   )

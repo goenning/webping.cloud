@@ -1,0 +1,101 @@
+{
+    "url": "https://www.digitalocean.com/ping/",
+    "regions": [
+        {
+            "key": "ams2",
+            "display_name": "AMS2",
+            "country": "NL",
+            "location": "Amsterdam",
+            "continent": "Europe",
+            "ping_url": "http://speedtest-ams2.digitalocean.com/ping"
+        },
+        {
+            "key": "ams3",
+            "display_name": "AMS3",
+            "country": "NL",
+            "location": "Amsterdam",
+            "continent": "Europe",
+            "ping_url": "http://speedtest-ams3.digitalocean.com/ping"
+        },
+        {
+            "key": "blr1",
+            "display_name": "BLR1",
+            "country": "IN",
+            "location": "Bangalore",
+            "continent": "Asia",
+            "ping_url": "http://speedtest-blr1.digitalocean.com/ping"
+        },
+        {
+            "key": "fra1",
+            "display_name": "FRA1",
+            "country": "DE",
+            "location": "Frankfurt",
+            "continent": "Europe",
+            "ping_url": "http://speedtest-fra1.digitalocean.com/ping"
+        },
+        {
+            "key": "lon1",
+            "display_name": "LON1",
+            "country": "GB",
+            "location": "London",
+            "continent": "Europe",
+            "ping_url": "http://speedtest-lon1.digitalocean.com/ping"
+        },
+        {
+            "key": "nyc1",
+            "display_name": "NYC1",
+            "country": "US",
+            "location": "New York",
+            "continent": "North America",
+            "ping_url": "http://speedtest-nyc1.digitalocean.com/ping"
+        },
+        {
+            "key": "nyc2",
+            "display_name": "NYC2",
+            "country": "US",
+            "location": "New York",
+            "continent": "North America",
+            "ping_url": "http://speedtest-nyc2.digitalocean.com/ping"
+        },
+        {
+            "key": "nyc3",
+            "display_name": "NYC3",
+            "country": "US",
+            "location": "New York",
+            "continent": "North America",
+            "ping_url": "http://speedtest-nyc3.digitalocean.com/ping"
+        },
+        {
+            "key": "sfo1",
+            "display_name": "SFO1",
+            "country": "US",
+            "location": "San Francisco",
+            "continent": "North America",
+            "ping_url": "http://speedtest-sfo1.digitalocean.com/ping"
+        },
+        {
+            "key": "sfo2",
+            "display_name": "SFO2",
+            "country": "US",
+            "location": "San Francisco",
+            "continent": "North America",
+            "ping_url": "http://speedtest-sfo2.digitalocean.com/ping"
+        },
+        {
+            "key": "sgp1",
+            "display_name": "SGP1",
+            "country": "SG",
+            "location": "Singapore",
+            "continent": "Asia",
+            "ping_url": "http://speedtest-sgp1.digitalocean.com/ping"
+        },
+        {
+            "key": "tor1",
+            "display_name": "TOR1",
+            "country": "CA",
+            "location": "Toronto",
+            "continent": "North America",
+            "ping_url": "http://speedtest-tor1.digitalocean.com/ping"
+        }
+    ]
+}

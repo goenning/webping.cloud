@@ -1,0 +1,18 @@
+[
+    {
+        "key": "aws",
+        "display_name": "Amazon Web Services"
+    },
+    {
+        "key": "azure",
+        "display_name": "Microsoft Azure"
+    },
+    {
+        "key": "gcp",
+        "display_name": "Google Cloud Platform"
+    },
+    {
+        "key": "digitalocean",
+        "display_name": "Digital Ocean"
+    }
+]
