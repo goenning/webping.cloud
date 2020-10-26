@@ -145,11 +145,11 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
   return (
     <>
       <Head>
-        <title>Sumbit</title>
+        <title>webping.cloud</title>
       </Head>
 
       <div className="container mx-auto flex flex-wrap py-6">
-        <div className="px-3 w-full">
+        <div className="px-3 w-full mb-2">
           <button
             onClick={() => setIsFilterOpen(!isFilterOpen)}
             className="md:hidden border-gray-400 bg-white rounded shadow font-bold rounded py-2 px-4 inline-flex items-center focus:outline-none float-right"

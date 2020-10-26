@@ -1,6 +1,6 @@
 {
-  "name": "sumbit9-www",
-  "version": "0.1.0",
+  "name": "webping.cloud",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
