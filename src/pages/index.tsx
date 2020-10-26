@@ -228,17 +228,14 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                   >
                     <td className="rounded py-1">
                       <div className="flex items-center">
-                        <CloudProviderLogo className="w-8 ml-4" providerKey={x.provider.key} providerName={x.provider.display_name} />
-                        <div className="ml-4">
+                        <CloudProviderLogo className="w-8 ml-3" providerKey={x.provider.key} providerName={x.provider.display_name} />
+                        <div className="ml-3">
                           <span>{x.region.key}</span>
                           <div className="flex items-center">
                             <CountryFlag countryCode={x.region.country} className="w-5" />
-                            <span className="ml-1">&middot;</span>
                             <span className="ml-1">
-                              {x.region.location}, <CountryName countryCode={x.region.country} />
+                              &middot; {x.region.location}, {x.region.country} &middot; {x.medianLatency}ms
                             </span>
-                            <span className="ml-1">&middot;</span>
-                            <span className="ml-1">{x.medianLatency}ms</span>
                           </div>
                         </div>
                       </div>

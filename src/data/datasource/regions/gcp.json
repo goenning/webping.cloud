@@ -181,7 +181,7 @@
             "key": "us-west3",
             "display_name": "Utah",
             "country": "US",
-            "location": "Salt Lake City, Utah",
+            "location": "Utah",
             "continent": "North America",
             "ping_url": "https://us-west3-gce.cloudharmony.net/probe/ping.js"
         }
