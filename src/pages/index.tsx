@@ -199,7 +199,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                               checked={selectedCountries.includes(country)}
                               onChange={toggleCountryFilter(country)}
                             />
-                            <CountryFlag countryCode={country} className="w-5 ml-1" /> {}
+                            <CountryFlag countryCode={country} className="w-5 ml-1" />
                             <CountryName countryCode={country} className="ml-1" />
                           </label>
                         )
@@ -226,12 +226,12 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                       backgroundImage: `linear-gradient(to right, #${color} ${relative}%, #fff ${relative}%)`,
                     }}
                   >
-                    <td className="rounded">
-                      <div className="flex">
+                    <td className="rounded py-1">
+                      <div className="flex items-center">
                         <CloudProviderLogo className="w-8 ml-4" providerKey={x.provider.key} providerName={x.provider.display_name} />
                         <div className="ml-4">
                           <span>{x.region.key}</span>
-                          <div className="flex mt-1">
+                          <div className="flex items-center">
                             <CountryFlag countryCode={x.region.country} className="w-5" />
                             <span className="ml-1">&middot;</span>
                             <span className="ml-1">
