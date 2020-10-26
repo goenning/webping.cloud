@@ -70,6 +70,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
         }
 
         try {
+          await ping(`${region.ping_url}`)
           const latency = await ping(`${region.ping_url}`)
           setLatencyState((x) => {
             const key = `${provider.key}-${region.key}`
