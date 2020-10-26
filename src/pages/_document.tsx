@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head />
-        <body>
+        <body className="text-gray-900">
           <Main />
           <NextScript />
         </body>

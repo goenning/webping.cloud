@@ -3,25 +3,25 @@
 @import "tailwindcss/utilities";
 
 h1 {
-  @apply text-5xl
+  @apply text-5xl font-black
 }
 
 h2 {
-  @apply text-4xl
+  @apply text-4xl font-extrabold
 }
 
 h3 {
-  @apply text-3xl
+  @apply text-3xl font-bold
 }
 
 h4 {
-  @apply text-2xl
+  @apply text-2xl font-bold
 }
 
 h5 {
-  @apply text-xl
+  @apply text-xl font-medium
 }
 
 h6 {
-  @apply text-lg
+  @apply text-lg font-medium
 }

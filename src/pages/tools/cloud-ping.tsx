@@ -3,6 +3,8 @@ import Head from 'next/head'
 import { CloudProvider, CloudRegion, getAllCloudRegions, getAllProviders } from '@app/data'
 import { GetStaticPropsResult } from 'next'
 import { CloudProviderLogo, CountryFlag, CountryName } from '@app/components'
+import { median } from '@app/fns/math'
+import { delay, ping } from '@app/fns/time'
 
 interface CloudPingProps {
   providers: CloudProvider[]
@@ -17,21 +19,6 @@ interface RegionLatency {
   region: CloudRegion
   medianLatency: number
   latencies: number[]
-}
-
-function median(values: number[]): number {
-  const copy = [...values]
-  copy.sort()
-
-  if (copy.length === 0) {
-    return 0
-  }
-
-  const half = Math.floor(copy.length / 2)
-  if (copy.length % 2) {
-    return copy[half]
-  }
-  return (copy[half - 1] + copy[half]) / 2.0
 }
 
 export async function getStaticProps(): Promise<GetStaticPropsResult<CloudPingProps>> {
@@ -65,27 +52,6 @@ export async function getStaticProps(): Promise<GetStaticPropsResult<CloudPingPr
   }
 }
 
-function delay(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms))
-}
-
-async function ping(url: string): Promise<number> {
-  return new Promise((resolve, reject) => {
-    const img = document.getElementById('url-ping') as HTMLImageElement
-    const timeout = setTimeout(() => {
-      img.src = ''
-      reject()
-    }, 2000)
-    const start = new Date().getTime()
-    const cb = () => {
-      clearTimeout(timeout)
-      resolve(new Date().getTime() - start)
-    }
-    img.onerror = img.onload = cb
-    img.src = url.startsWith('http://dynamodb') ? url : `${url}?${start}`
-  })
-}
-
 export default function CloudPing(props: CloudPingProps): JSX.Element {
   const [selectedProviders, setSelectedProviders] = useState(props.providers.map((x) => x.key))
   const [selectedCountries, setSelectedCountries] = useState(props.countries)
@@ -104,16 +70,11 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
           continue
         }
 
-        const start = new Date().getTime()
-
         try {
-          await ping(`${region.ping_url}`)
-          // eslint-disable-next-line no-empty
-        } catch {
-        } finally {
+          const latency = await ping(`${region.ping_url}`)
           setLatencyState((x) => {
             const key = `${provider.key}-${region.key}`
-            const latencies = [...(x[key]?.latencies || []), new Date().getTime() - start]
+            const latencies = [...(x[key]?.latencies || []), latency]
             const latest: RegionLatency = {
               key,
               provider,
@@ -123,7 +84,8 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
             }
             return { ...x, ...{ [key]: latest } }
           })
-        }
+          // eslint-disable-next-line no-empty
+        } catch {}
       }
     }
 
@@ -185,82 +147,96 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
         <title>Sumbit</title>
       </Head>
 
-      <img src="" id="url-ping" alt="Ping" style={{ display: 'none' }} />
+      <div className="container mx-auto flex flex-wrap py-6">
+        <aside className="w-full md:w-1/3 flex flex-col px-3">
+          <div>
+            <h4>Providers</h4>
+            {props.providers.map((provider) => (
+              <div key={provider.key}>
+                <input
+                  type="checkbox"
+                  className="form-checkbox"
+                  checked={selectedProviders.includes(provider.key)}
+                  onChange={toggleProviderFilter(provider.key)}
+                />
+                <CloudProviderLogo className="w-5 ml-1" providerKey={provider.key} providerName={provider.display_name} />
+                <span className="ml-1">{provider.display_name}</span>
+              </div>
+            ))}
+          </div>
 
-      <div className="flex">
-        <div className="mr-4">
-          <h4>Providers</h4>
-          {props.providers.map((provider) => (
-            <div key={provider.key}>
-              <input type="checkbox" checked={selectedProviders.includes(provider.key)} onChange={toggleProviderFilter(provider.key)} />
-              <CloudProviderLogo className="w-5" providerKey={provider.key} providerName={provider.display_name} />
-              {provider.display_name}
-            </div>
-          ))}
-        </div>
+          <div>
+            <h4 className="mt-4">Locations</h4>
 
-        <div>
-          <h4>Locations</h4>
-
-          <div className="flex">
             {Object.keys(props.continents).map((continent) => {
               const allSelected = props.continents[continent].some((x) => selectedCountries.includes(x))
               return (
-                <div key={continent} className="mr-4">
+                <div key={continent}>
                   <div>
-                    <input type="checkbox" checked={allSelected} onChange={toggleContinentFilter(continent)} />
-                    <h6 className="inline">{continent}</h6>
+                    <input type="checkbox" className="form-checkbox" checked={allSelected} onChange={toggleContinentFilter(continent)} />
+                    <h6 className="inline ml-1">{continent}</h6>
                   </div>
                   <div key={continent}>
-                    {props.continents[continent].map((country) => (
-                      <div key={country}>
-                        <input type="checkbox" checked={selectedCountries.includes(country)} onChange={toggleCountryFilter(country)} />
-                        <CountryFlag countryCode={country} className="w-5" />
-                        <CountryName countryCode={country} />
-                      </div>
-                    ))}
+                    {props.continents[continent].map((country, idx) => {
+                      const isLastCountry = idx === props.continents[continent].length - 1
+                      return (
+                        <label className={`flex items-center ${isLastCountry && 'mb-4'}`} key={country}>
+                          <input
+                            type="checkbox"
+                            className="form-checkbox"
+                            checked={selectedCountries.includes(country)}
+                            onChange={toggleCountryFilter(country)}
+                          />
+                          <CountryFlag countryCode={country} className="w-5 ml-1" /> {}
+                          <CountryName countryCode={country} className="ml-1" />
+                        </label>
+                      )
+                    })}
                   </div>
                 </div>
               )
             })}
           </div>
-        </div>
-      </div>
+        </aside>
+        <section className="w-full md:w-2/3 flex flex-col items-center px-3">
+          <img src="" id="url-ping" alt="Ping" style={{ display: 'none' }} />
 
-      <table style={{ width: '100%', borderSpacing: '5px', borderCollapse: 'separate' }}>
-        <tbody>
-          {sortedRegions.map((x) => {
-            const relative = ((x.medianLatency || 0) / maxLatency) * 100
-            const color = x.medianLatency < 80 ? 'ddffdd' : x.medianLatency < 200 ? 'fff0cc' : 'ffdddd'
-            return (
-              <tr
-                key={x.key}
-                style={{
-                  backgroundImage: `linear-gradient(to right, #${color} ${relative}%, #fff ${relative}%)`,
-                }}
-              >
-                <td>
-                  <div className="flex">
-                    <CloudProviderLogo className="w-8" providerKey={x.provider.key} providerName={x.provider.display_name} />
-                    <div className="ml-4">
-                      <span>{x.region.key}</span>
-                      <div className="flex mt-1">
-                        <CountryFlag countryCode={x.region.country} className="w-5" />
-                        <span className="ml-1">&middot;</span>
-                        <span className="ml-1">
-                          {x.region.location}, <CountryName countryCode={x.region.country} />
-                        </span>
-                        <span className="ml-1">&middot;</span>
-                        <span className="ml-1">{x.medianLatency}ms</span>
+          <table style={{ width: '100%', borderSpacing: '5px', borderCollapse: 'separate' }}>
+            <tbody>
+              {sortedRegions.map((x) => {
+                const relative = ((x.medianLatency || 0) / maxLatency) * 100
+                const color = x.medianLatency < 80 ? 'ddffdd' : x.medianLatency < 200 ? 'fff0cc' : 'ffdddd'
+                return (
+                  <tr
+                    key={x.key}
+                    style={{
+                      backgroundImage: `linear-gradient(to right, #${color} ${relative}%, #fff ${relative}%)`,
+                    }}
+                  >
+                    <td>
+                      <div className="flex">
+                        <CloudProviderLogo className="w-8" providerKey={x.provider.key} providerName={x.provider.display_name} />
+                        <div className="ml-4">
+                          <span>{x.region.key}</span>
+                          <div className="flex mt-1">
+                            <CountryFlag countryCode={x.region.country} className="w-5" />
+                            <span className="ml-1">&middot;</span>
+                            <span className="ml-1">
+                              {x.region.location}, <CountryName countryCode={x.region.country} />
+                            </span>
+                            <span className="ml-1">&middot;</span>
+                            <span className="ml-1">{x.medianLatency}ms</span>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            )
-          })}
-        </tbody>
-      </table>
+                    </td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        </section>
+      </div>
     </>
   )
 }
