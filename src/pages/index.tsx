@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 import { CloudProvider, CloudRegion, getAllCloudRegions, getAllProviders } from '../data'
 import { GetStaticPropsResult } from 'next'
-import { Checkbox, Heading, Image, Stack, Text, useMenuList } from '@chakra-ui/core'
+import { Checkbox, Heading, Image, Stack, Text } from '@chakra-ui/core'
 
 interface HomeProps {
   providers: CloudProvider[]

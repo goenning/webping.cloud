@@ -4,7 +4,7 @@
         {
             "key": "eastasia",
             "display_name": "East Asia",
-            "country": "CN",
+            "country": "HK",
             "location": "Hong Kong",
             "continent": "Asia",
             "ping_url": "http://asteastasia.blob.core.windows.net/public/latency-test.json"
@@ -284,6 +284,70 @@
             "location": "Sao Paulo",
             "continent": "South America",
             "ping_url": "http://astbrazilsouth.blob.core.windows.net/public/latency-test.json"
+        },
+        {
+            "key": "brazilsoutheast",
+            "display_name": "Brazil Southeast",
+            "country": "BR",
+            "location": "Rio de Janeiro",
+            "continent": "South America",
+            "ping_url": "https://astbrazilsoutheast.blob.core.windows.net/public/latency-test.json"
+        },
+        {
+            "key": "southafricanorth",
+            "display_name": "South Africa North",
+            "country": "ZA",
+            "location": "Johannesburg",
+            "continent": "Africa",
+            "ping_url": "http://astsouthafricanorth.blob.core.windows.net/public/latency-test.json"
+        },
+        {
+            "key": "southafricawest",
+            "display_name": "South Africa West",
+            "country": "ZA",
+            "location": "Cape Town",
+            "continent": "Africa",
+            "ping_url": "https://astsouthafricawest.blob.core.windows.net/public/latency-test.json"
+        },
+        {
+            "key": "norwayeast",
+            "display_name": "Norway West",
+            "country": "NO",
+            "location": "Oslo",
+            "continent": "Europe",
+            "ping_url": "https://astnorwayeast.blob.core.windows.net/public/latency-test.json"
+        },
+        {
+            "key": "switzerlandwest",
+            "display_name": "Switzerland West",
+            "country": "CH",
+            "location": "Geneva",
+            "continent": "Europe",
+            "ping_url": "https://astswitzerlandwest.blob.core.windows.net/public/latency-test.json"
+        },
+        {
+            "key": "switzerlandnorth",
+            "display_name": "Switzerland North",
+            "country": "CH",
+            "location": "Zürich",
+            "continent": "Europe",
+            "ping_url": "https://astswitzerlandnorth.blob.core.windows.net/public/latency-test.json"
+        },
+        {
+            "key": "uaecentral",
+            "display_name": "UAE Central",
+            "country": "AE",
+            "location": "Abu Dhabi",
+            "continent": "Middle East",
+            "ping_url": "https://astuaecentral.blob.core.windows.net/public/latency-test.json"
+        },
+        {
+            "key": "uaenorth",
+            "display_name": "UAE North",
+            "country": "AE",
+            "location": "Dubai",
+            "continent": "Middle East",
+            "ping_url": "https://astuaenorth.blob.core.windows.net/public/latency-test.json"
         }
     ]
 }

@@ -12,10 +12,10 @@
         {
             "key": "asia-east2",
             "display_name": "Hong Kong",
-            "country": "CN",
+            "country": "HK",
             "location": "Hong Kong",
             "continent": "Asia",
-            "ping_url": "http://35.220.162.209/ping"
+            "ping_url": "https://asia-east2-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "asia-northeast1",
@@ -26,12 +26,28 @@
             "ping_url": "http://104.198.86.148/ping"
         },
         {
+            "key": "asia-northeast2",
+            "display_name": "Osaka",
+            "country": "JP",
+            "location": "Osaka",
+            "continent": "Asia",
+            "ping_url": "http://34.97.196.51/ping"
+        },
+        {
+            "key": "asia-northeast3",
+            "display_name": "Seoul",
+            "country": "SK",
+            "location": "Seoul",
+            "continent": "Asia",
+            "ping_url": "http://34.64.138.27/ping"
+        },
+        {
             "key": "asia-south1",
             "display_name": "Mumbai",
             "country": "IN",
             "location": "Mumbai",
             "continent": "Asia",
-            "ping_url": "http://35.200.186.152/ping"
+            "ping_url": "https://asia-south1-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "asia-southeast1",
@@ -40,6 +56,14 @@
             "location": "Singapore",
             "continent": "Asia",
             "ping_url": "http://35.185.179.198/ping"
+        },
+        {
+            "key": "asia-southeast2",
+            "display_name": "Jakarta",
+            "country": "ID",
+            "location": "Jakarta",
+            "continent": "Asia",
+            "ping_url": "http://34.101.169.35/ping"
         },
         {
             "key": "australia-southeast1",
@@ -90,6 +114,14 @@
             "ping_url": "http://35.204.93.82/ping"
         },
         {
+            "key": "europe-west6",
+            "display_name": "Switzerland",
+            "country": "CH",
+            "location": "Switzerland",
+            "continent": "Europe",
+            "ping_url": "https://europe-west6-gce.cloudharmony.net/probe/ping.js"
+        },
+        {
             "key": "northamerica-northeast1",
             "display_name": "Montreal",
             "country": "CA",
@@ -99,9 +131,9 @@
         },
         {
             "key": "southamerica-east1",
-            "display_name": "Sao Paulo",
+            "display_name": "São Paulo",
             "country": "BR",
-            "location": "Sao Paulo",
+            "location": "São Paulo",
             "continent": "South America",
             "ping_url": "http://35.198.10.68/ping"
         },
@@ -119,13 +151,13 @@
             "country": "US",
             "location": "South Carolina",
             "continent": "North America",
-            "ping_url": "http://104.196.161.21/ping"
+            "ping_url": "https://us-east1-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "us-east4",
-            "display_name": "North Virginia",
+            "display_name": "Virginia",
             "country": "US",
-            "location": "North Virginia",
+            "location": "Virginia",
             "continent": "North America",
             "ping_url": "http://35.186.168.152/ping"
         },
@@ -139,11 +171,27 @@
         },
         {
             "key": "us-west2",
-            "display_name": "Los Angeles",
+            "display_name": "California",
             "country": "US",
-            "location": "Los Angeles",
+            "location": "California",
             "continent": "North America",
             "ping_url": "http://35.236.45.25/ping"
+        },
+        {
+            "key": "us-west3",
+            "display_name": "Utah",
+            "country": "US",
+            "location": "Salt Lake City, Utah",
+            "continent": "North America",
+            "ping_url": "http://34.106.137.137/ping"
+        },
+        {
+            "key": "us-west3",
+            "display_name": "Nevada",
+            "country": "US",
+            "location": "Nevada",
+            "continent": "North America",
+            "ping_url": "http://34.125.96.237/ping"
         }
     ]
 }

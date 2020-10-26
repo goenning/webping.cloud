@@ -34,6 +34,22 @@
             "ping_url": "http://dynamodb.us-west-2.amazonaws.com/ping"
         },
         {
+            "key": "af-south-1",
+            "display_name": "Africa (Cape Town)",
+            "country": "ZA",
+            "location": "Cape Town",
+            "continent": "Africa",
+            "ping_url": "http://dynamodb.af-south-1.amazonaws.com/ping"
+        },
+        {
+            "key": "ap-east-1",
+            "display_name": "Asia Pacific (Hong Kong)",
+            "country": "HK",
+            "location": "Hong Kong",
+            "continent": "Asia",
+            "ping_url": "http://dynamodb.ap-east-1.amazonaws.com/ping"
+        },
+        {
             "key": "ap-south-1",
             "display_name": "Asia Pacific (Mumbai)",
             "country": "IN",
@@ -130,6 +146,14 @@
             "ping_url": "http://dynamodb.eu-west-2.amazonaws.com/ping"
         },
         {
+            "key": "eu-south-1",
+            "display_name": "Europe (Milan)",
+            "country": "IT",
+            "location": "Milan",
+            "continent": "Europe",
+            "ping_url": "http://dynamodb.eu-south-1.amazonaws.com/ping"
+        },
+        {
             "key": "eu-west-3",
             "display_name": "EU (Paris)",
             "country": "FR",
@@ -146,10 +170,18 @@
             "ping_url": "http://dynamodb.eu-north-1.amazonaws.com/ping"
         },
         {
+            "key": "me-south-1",
+            "display_name": "Middle East (Bahrain)",
+            "country": "BH",
+            "location": "Bahrain",
+            "continent": "Middle East",
+            "ping_url": "http://dynamodb.me-south-1.amazonaws.com/ping"
+        },
+        {
             "key": "sa-east-1",
-            "display_name": "South America (Sao Paulo)",
+            "display_name": "South America (São Paulo)",
             "country": "BR",
-            "location": "Sao Paulo",
+            "location": "São Paulo",
             "continent": "South America",
             "ping_url": "http://dynamodb.sa-east-1.amazonaws.com/ping"
         }
