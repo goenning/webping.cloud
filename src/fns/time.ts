@@ -14,7 +14,7 @@ export async function ping(url: string): Promise<number> {
   return new Promise((resolve) => {
     const actualUrl = url.startsWith('https://dynamodb') ? url : `${url}?${new Date().getTime()}`
     const start = new Date().getTime()
-    const request = fetch(actualUrl, { method: 'GET', cache: 'no-store', mode: 'no-cors', keepalive: false })
+    const request = fetch(actualUrl, { method: 'GET', cache: 'no-store', mode: 'no-cors' })
     return Promise.race([request, timeout(2000)])
       .then(() => resolve(new Date().getTime() - start))
       .catch(() => resolve(new Date().getTime() - start))
