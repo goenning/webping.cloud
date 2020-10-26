@@ -36,7 +36,7 @@
         {
             "key": "asia-northeast3",
             "display_name": "Seoul",
-            "country": "SK",
+            "country": "KR",
             "location": "Seoul",
             "continent": "Asia",
             "ping_url": "http://34.64.138.27/ping"

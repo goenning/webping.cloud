@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
-import { CloudProvider, CloudRegion, getAllCloudRegions, getAllProviders } from '../../data'
+import { CloudProvider, CloudRegion, getAllCloudRegions, getAllProviders } from '@app/data'
 import { GetStaticPropsResult } from 'next'
+import { CloudProviderLogo, CountryFlag, CountryName } from '@app/components'
 
 interface CloudPingProps {
   providers: CloudProvider[]
@@ -33,7 +34,7 @@ function median(values: number[]): number {
   return (copy[half - 1] + copy[half]) / 2.0
 }
 
-export async function getStaticProps(): Promise<GetStaticPropsResult<HomeProps>> {
+export async function getStaticProps(): Promise<GetStaticPropsResult<CloudPingProps>> {
   const providers = getAllProviders()
   const regions = getAllCloudRegions()
 
@@ -148,22 +149,22 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
     .sort((a, b) => a.medianLatency - b.medianLatency)
   const maxLatency = sortedRegions.length >= 1 ? sortedRegions[sortedRegions.length - 1].medianLatency : 0
 
-  const toggleProviderFilter = (providerKey: string) => () => {
+  const toggleProviderFilter = (providerKey: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedProviders((values) => {
-      if (values.includes(providerKey)) {
-        return values.filter((x) => x !== providerKey)
-      } else {
+      if (event.target.checked) {
         return [...values, providerKey]
+      } else {
+        return values.filter((x) => x !== providerKey)
       }
     })
   }
 
-  const toggleCountryFilter = (countryCode: string) => () => {
+  const toggleCountryFilter = (countryCode: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedCountries((values) => {
-      if (values.includes(countryCode)) {
-        return values.filter((x) => x !== countryCode)
-      } else {
+      if (event.target.checked) {
         return [...values, countryCode]
+      } else {
+        return values.filter((x) => x !== countryCode)
       }
     })
   }
@@ -191,7 +192,8 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
           <h4>Providers</h4>
           {props.providers.map((provider) => (
             <div key={provider.key}>
-              <input type="checkbox" defaultChecked={selectedProviders.includes(provider.key)} onChange={toggleProviderFilter(provider.key)} />
+              <input type="checkbox" checked={selectedProviders.includes(provider.key)} onChange={toggleProviderFilter(provider.key)} />
+              <CloudProviderLogo className="w-5" providerKey={provider.key} providerName={provider.display_name} />
               {provider.display_name}
             </div>
           ))}
@@ -206,14 +208,15 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
               return (
                 <div key={continent} className="mr-4">
                   <div>
-                    <input type="checkbox" defaultChecked={allSelected} onChange={toggleContinentFilter(continent)} />
+                    <input type="checkbox" checked={allSelected} onChange={toggleContinentFilter(continent)} />
                     <h6 className="inline">{continent}</h6>
                   </div>
                   <div key={continent}>
                     {props.continents[continent].map((country) => (
                       <div key={country}>
-                        <input type="checkbox" defaultChecked={selectedCountries.includes(country)} onChange={toggleCountryFilter(country)} />
-                        <img className="w-5 inline" src={`/images/country/${country.toLowerCase()}.svg`} title={country} alt={country} />
+                        <input type="checkbox" checked={selectedCountries.includes(country)} onChange={toggleCountryFilter(country)} />
+                        <CountryFlag countryCode={country} className="w-5" />
+                        <CountryName countryCode={country} />
                       </div>
                     ))}
                   </div>
@@ -238,19 +241,14 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
               >
                 <td>
                   <div className="flex">
-                    <img className="w-8 inline" src={`/images/provider/${x.provider.key}.svg`} title={x.provider.display_name} alt={x.provider.display_name} />
+                    <CloudProviderLogo className="w-8" providerKey={x.provider.key} providerName={x.provider.display_name} />
                     <div className="ml-4">
                       <span>{x.region.key}</span>
                       <div className="flex mt-1">
-                        <img
-                          className="w-5 inline"
-                          src={`/images/country/${x.region.country.toLowerCase()}.svg`}
-                          title={x.region.country}
-                          alt={x.region.country}
-                        />
+                        <CountryFlag countryCode={x.region.country} className="w-5" />
                         <span className="ml-1">&middot;</span>
                         <span className="ml-1">
-                          {x.region.location}, {x.region.country}
+                          {x.region.location}, <CountryName countryCode={x.region.country} />
                         </span>
                         <span className="ml-1">&middot;</span>
                         <span className="ml-1">{x.medianLatency}ms</span>
