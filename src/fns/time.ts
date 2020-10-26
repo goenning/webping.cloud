@@ -15,6 +15,6 @@ export async function ping(url: string): Promise<number> {
       resolve(new Date().getTime() - start)
     }
     img.onerror = img.onload = cb
-    img.src = url.startsWith('http://dynamodb') ? url : `${url}?${start}`
+    img.src = url.startsWith('https://dynamodb') ? url : `${url}?${start}`
   })
 }

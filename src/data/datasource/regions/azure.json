@@ -7,7 +7,7 @@
             "country": "HK",
             "location": "Hong Kong",
             "continent": "Asia",
-            "ping_url": "http://asteastasia.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://asteastasia.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "southeastasia",
@@ -15,7 +15,7 @@
             "country": "SG",
             "location": "Singapore",
             "continent": "Asia",
-            "ping_url": "http://astsoutheastasia.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astsoutheastasia.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "australiaeast",
@@ -23,7 +23,7 @@
             "country": "AU",
             "location": "New South Wales",
             "continent": "Oceania",
-            "ping_url": "http://astaustraliaeast.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astaustraliaeast.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "australiasoutheast",
@@ -31,7 +31,7 @@
             "country": "AU",
             "location": "Victoria",
             "continent": "Oceania",
-            "ping_url": "http://astaustraliasoutheast.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astaustraliasoutheast.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "australiacentral",
@@ -39,7 +39,7 @@
             "country": "AU",
             "location": "Canberra",
             "continent": "Oceania",
-            "ping_url": "http://astaustraliacentral.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astaustraliacentral.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "australiacentral2",
@@ -47,7 +47,7 @@
             "country": "AU",
             "location": "Canberra",
             "continent": "Oceania",
-            "ping_url": "http://astaustraliacentral2.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astaustraliacentral2.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "chinaeast",
@@ -83,7 +83,7 @@
             "country": "IN",
             "location": "Pune",
             "continent": "Asia",
-            "ping_url": "http://astcentralindia.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astcentralindia.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "westindia",
@@ -91,7 +91,7 @@
             "country": "IN",
             "location": "Mumbai",
             "continent": "Asia",
-            "ping_url": "http://astwestindia.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astwestindia.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "southindia",
@@ -99,7 +99,7 @@
             "country": "IN",
             "location": "Chennai",
             "continent": "Asia",
-            "ping_url": "http://astsouthindia.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astsouthindia.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "japaneast",
@@ -107,7 +107,7 @@
             "country": "JP",
             "location": "Tokyo",
             "continent": "Asia",
-            "ping_url": "http://astjapaneast.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astjapaneast.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "japanwest",
@@ -115,7 +115,7 @@
             "country": "JP",
             "location": "Osaka",
             "continent": "Asia",
-            "ping_url": "http://astjapanwest.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astjapanwest.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "koreacentral",
@@ -123,7 +123,7 @@
             "country": "KR",
             "location": "Seoul",
             "continent": "Asia",
-            "ping_url": "http://astkoreacentral.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astkoreacentral.blob.core.windows.net/public/latency-test.json"
 
         },
         {
@@ -132,7 +132,7 @@
             "country": "KR",
             "location": "Busan",
             "continent": "Asia",
-            "ping_url": "http://astkoreasouth.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astkoreasouth.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "northeurope",
@@ -140,7 +140,7 @@
             "country": "IE",
             "location": "Dublin",
             "continent": "Europe",
-            "ping_url": "http://astnortheurope.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astnortheurope.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "westeurope",
@@ -148,7 +148,7 @@
             "country": "NL",
             "location": "Amsterdam",
             "continent": "Europe",
-            "ping_url": "http://astwesteurope.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astwesteurope.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "francecentral",
@@ -156,7 +156,7 @@
             "country": "FR",
             "location": "Paris",
             "continent": "Europe",
-            "ping_url": "http://astfrancecentral.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astfrancecentral.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "francesouth",
@@ -171,7 +171,7 @@
             "country": "UK",
             "location": "Cardiff",
             "continent": "Europe",
-            "ping_url": "http://astukwest.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astukwest.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "uksouth",
@@ -179,7 +179,7 @@
             "country": "UK",
             "location": "London",
             "continent": "Europe",
-            "ping_url": "http://astuksouth.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astuksouth.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "germanywestcentral",
@@ -203,7 +203,7 @@
             "country": "US",
             "location": "Virginia",
             "continent": "North America",
-            "ping_url": "http://asteastus.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://asteastus.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "eastus2",
@@ -211,7 +211,7 @@
             "country": "US",
             "location": "Virginia",
             "continent": "North America",
-            "ping_url": "http://asteastus2.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://asteastus2.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "centralus",
@@ -219,7 +219,7 @@
             "country": "US",
             "location": "Iowa",
             "continent": "North America",
-            "ping_url": "http://astcentralus.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astcentralus.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "northcentralus",
@@ -227,7 +227,7 @@
             "country": "US",
             "location": "Illinois",
             "continent": "North America",
-            "ping_url": "http://astnorthcentralus.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astnorthcentralus.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "southcentralus",
@@ -235,7 +235,7 @@
             "country": "US",
             "location": "Texas",
             "continent": "North America",
-            "ping_url": "http://astsouthcentralus.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astsouthcentralus.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "westcentralus",
@@ -243,7 +243,7 @@
             "country": "US",
             "location": "Wyoming",
             "continent": "North America",
-            "ping_url": "http://astwestcentralus.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astwestcentralus.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "westus",
@@ -251,7 +251,7 @@
             "country": "US",
             "location": "California",
             "continent": "North America",
-            "ping_url": "http://astwestus.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astwestus.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "westus2",
@@ -259,7 +259,7 @@
             "country": "US",
             "location": "Washington",
             "continent": "North America",
-            "ping_url": "http://astwestus2.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astwestus2.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "canadaeast",
@@ -267,7 +267,7 @@
             "country": "CA",
             "location": "Quebec City",
             "continent": "North America",
-            "ping_url": "http://astcanadaeast.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astcanadaeast.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "canadacentral",
@@ -275,7 +275,7 @@
             "country": "CA",
             "location": "Toronto",
             "continent": "North America",
-            "ping_url": "http://astcanadacentral.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astcanadacentral.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "brazilsouth",
@@ -283,7 +283,7 @@
             "country": "BR",
             "location": "Sao Paulo",
             "continent": "South America",
-            "ping_url": "http://astbrazilsouth.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astbrazilsouth.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "brazilsoutheast",
@@ -299,7 +299,7 @@
             "country": "ZA",
             "location": "Johannesburg",
             "continent": "Africa",
-            "ping_url": "http://astsouthafricanorth.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://astsouthafricanorth.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "southafricawest",

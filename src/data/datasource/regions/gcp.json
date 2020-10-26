@@ -7,7 +7,7 @@
             "country": "TW",
             "location": "Taiwan",
             "continent": "Asia",
-            "ping_url": "http://104.155.201.52/ping"
+            "ping_url": "https://asia-east1-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "asia-east2",
@@ -23,7 +23,7 @@
             "country": "JP",
             "location": "Tokyo",
             "continent": "Asia",
-            "ping_url": "http://104.198.86.148/ping"
+            "ping_url": "https://asia-northeast1-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "asia-northeast2",
@@ -31,7 +31,7 @@
             "country": "JP",
             "location": "Osaka",
             "continent": "Asia",
-            "ping_url": "http://34.97.196.51/ping"
+            "ping_url": "https://asia-northeast2-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "asia-northeast3",
@@ -39,7 +39,7 @@
             "country": "KR",
             "location": "Seoul",
             "continent": "Asia",
-            "ping_url": "http://34.64.138.27/ping"
+            "ping_url": "https://asia-northeast3-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "asia-south1",
@@ -55,7 +55,7 @@
             "country": "SG",
             "location": "Singapore",
             "continent": "Asia",
-            "ping_url": "http://35.185.179.198/ping"
+            "ping_url": "https://asia-southeast1-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "asia-southeast2",
@@ -63,7 +63,7 @@
             "country": "ID",
             "location": "Jakarta",
             "continent": "Asia",
-            "ping_url": "http://34.101.169.35/ping"
+            "ping_url": "https://asia-southeast2-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "australia-southeast1",
@@ -71,7 +71,7 @@
             "country": "AU",
             "location": "Sydney",
             "continent": "Oceania",
-            "ping_url": "http://35.189.6.113/ping"
+            "ping_url": "https://australia-southeast1-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "europe-north1",
@@ -79,7 +79,7 @@
             "country": "FI",
             "location": "Hamina",
             "continent": "Europe",
-            "ping_url": "http://35.228.170.201/ping"
+            "ping_url": "https://europe-north1-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "europe-west1",
@@ -87,7 +87,7 @@
             "country": "BE",
             "location": "Belgium",
             "continent": "Europe",
-            "ping_url": "http://104.199.82.109/ping"
+            "ping_url": "https://europe-west1-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "europe-west2",
@@ -95,7 +95,7 @@
             "country": "UK",
             "location": "London",
             "continent": "Europe",
-            "ping_url": "http://35.189.67.146/ping"
+            "ping_url": "https://europe-west2-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "europe-west3",
@@ -103,7 +103,7 @@
             "country": "DE",
             "location": "Frankfurt",
             "continent": "Europe",
-            "ping_url": "http://35.198.78.172/ping"
+            "ping_url": "https://europe-west3-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "europe-west4",
@@ -111,7 +111,7 @@
             "country": "NL",
             "location": "Netherlands",
             "continent": "Europe",
-            "ping_url": "http://35.204.93.82/ping"
+            "ping_url": "https://europe-west4-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "europe-west6",
@@ -127,7 +127,7 @@
             "country": "CA",
             "location": "Montreal",
             "continent": "North America",
-            "ping_url": "http://35.203.57.164/ping"
+            "ping_url": "https://northamerica-northeast1-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "southamerica-east1",
@@ -135,7 +135,7 @@
             "country": "BR",
             "location": "São Paulo",
             "continent": "South America",
-            "ping_url": "http://35.198.10.68/ping"
+            "ping_url": "https://southamerica-east1-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "us-central1",
@@ -143,7 +143,7 @@
             "country": "US",
             "location": "Iowa",
             "continent": "North America",
-            "ping_url": "http://104.197.165.8/ping"
+            "ping_url": "https://us-central1-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "us-east1",
@@ -159,7 +159,7 @@
             "country": "US",
             "location": "Virginia",
             "continent": "North America",
-            "ping_url": "http://35.186.168.152/ping"
+            "ping_url": "https://us-east4-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "us-west1",
@@ -167,7 +167,7 @@
             "country": "US",
             "location": "Oregon",
             "continent": "North America",
-            "ping_url": "http://104.199.116.74/ping"
+            "ping_url": "https://us-west1-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "us-west2",
@@ -175,7 +175,7 @@
             "country": "US",
             "location": "California",
             "continent": "North America",
-            "ping_url": "http://35.236.45.25/ping"
+            "ping_url": "https://us-west2-a-gce.cloudharmony.net/probe/ping.js"
         },
         {
             "key": "us-west3",
@@ -183,15 +183,7 @@
             "country": "US",
             "location": "Salt Lake City, Utah",
             "continent": "North America",
-            "ping_url": "http://34.106.137.137/ping"
-        },
-        {
-            "key": "us-west3",
-            "display_name": "Nevada",
-            "country": "US",
-            "location": "Nevada",
-            "continent": "North America",
-            "ping_url": "http://34.125.96.237/ping"
+            "ping_url": "https://us-west3-gce.cloudharmony.net/probe/ping.js"
         }
     ]
 }
