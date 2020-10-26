@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 import { CloudProvider, CloudRegion, getAllCloudRegions, getAllProviders } from '../../data'
 import { GetStaticPropsResult } from 'next'
-import { Checkbox, Heading, Image, Stack, Text } from '@chakra-ui/core'
 
 interface CloudPingProps {
   providers: CloudProvider[]
@@ -187,46 +186,43 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
 
       <img src="" id="url-ping" alt="Ping" style={{ display: 'none' }} />
 
-      <Stack isInline spacing={12}>
-        <Stack marginBottom={6}>
-          <Heading as="h4" size="md">
-            Providers
-          </Heading>
+      <div className="flex">
+        <div className="mr-4">
+          <h4>Providers</h4>
           {props.providers.map((provider) => (
-            <Checkbox key={provider.key} isChecked={selectedProviders.includes(provider.key)} onChange={toggleProviderFilter(provider.key)}>
+            <div key={provider.key}>
+              <input type="checkbox" defaultChecked={selectedProviders.includes(provider.key)} onChange={toggleProviderFilter(provider.key)} />
               {provider.display_name}
-            </Checkbox>
+            </div>
           ))}
-        </Stack>
+        </div>
 
-        <Stack>
-          <Heading as="h4" size="md">
-            Locations
-          </Heading>
+        <div>
+          <h4>Locations</h4>
 
-          <Stack isInline spacing={12}>
+          <div className="flex">
             {Object.keys(props.continents).map((continent) => {
               const allSelected = props.continents[continent].some((x) => selectedCountries.includes(x))
               return (
-                <Stack key={continent}>
-                  <Checkbox isChecked={allSelected} onChange={toggleContinentFilter(continent)}>
-                    <Heading as="h6" size="sm">
-                      {continent}
-                    </Heading>
-                  </Checkbox>
-                  <Stack key={continent}>
+                <div key={continent} className="mr-4">
+                  <div>
+                    <input type="checkbox" defaultChecked={allSelected} onChange={toggleContinentFilter(continent)} />
+                    <h6 className="inline">{continent}</h6>
+                  </div>
+                  <div key={continent}>
                     {props.continents[continent].map((country) => (
-                      <Checkbox key={country} isChecked={selectedCountries.includes(country)} onChange={toggleCountryFilter(country)}>
-                        <Image htmlWidth="20px" src={`/images/country/${country.toLowerCase()}.svg`} title={country} alt={country} />
-                      </Checkbox>
+                      <div key={country}>
+                        <input type="checkbox" defaultChecked={selectedCountries.includes(country)} onChange={toggleCountryFilter(country)} />
+                        <img className="w-5 inline" src={`/images/country/${country.toLowerCase()}.svg`} title={country} alt={country} />
+                      </div>
                     ))}
-                  </Stack>
-                </Stack>
+                  </div>
+                </div>
               )
             })}
-          </Stack>
-        </Stack>
-      </Stack>
+          </div>
+        </div>
+      </div>
 
       <table style={{ width: '100%', borderSpacing: '5px', borderCollapse: 'separate' }}>
         <tbody>
@@ -241,21 +237,26 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                 }}
               >
                 <td>
-                  <Stack margin={2} isInline spacing={4}>
-                    <Image htmlWidth="30px" src={`/images/provider/${x.provider.key}.svg`} title={x.provider.display_name} alt={x.provider.display_name} />
-                    <Stack>
-                      <Text>{x.region.key}</Text>
-                      <Stack isInline>
-                        <Image htmlWidth="20px" src={`/images/country/${x.region.country.toLowerCase()}.svg`} title={x.region.country} alt={x.region.country} />
-                        <Text>&middot;</Text>
-                        <Text>
+                  <div className="flex">
+                    <img className="w-8 inline" src={`/images/provider/${x.provider.key}.svg`} title={x.provider.display_name} alt={x.provider.display_name} />
+                    <div className="ml-4">
+                      <span>{x.region.key}</span>
+                      <div className="flex mt-1">
+                        <img
+                          className="w-5 inline"
+                          src={`/images/country/${x.region.country.toLowerCase()}.svg`}
+                          title={x.region.country}
+                          alt={x.region.country}
+                        />
+                        <span className="ml-1">&middot;</span>
+                        <span className="ml-1">
                           {x.region.location}, {x.region.country}
-                        </Text>
-                        <Text>&middot;</Text>
-                        <Text>{x.medianLatency}ms</Text>
-                      </Stack>
-                    </Stack>
-                  </Stack>
+                        </span>
+                        <span className="ml-1">&middot;</span>
+                        <span className="ml-1">{x.medianLatency}ms</span>
+                      </div>
+                    </div>
+                  </div>
                 </td>
               </tr>
             )

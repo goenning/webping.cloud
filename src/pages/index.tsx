@@ -7,7 +7,7 @@ export default function Home(): JSX.Element {
       <Head>
         <title>Sumbit</title>
       </Head>
-      <h1>Hello World</h1>
+      <h1 className="bg-red-200">Hello World</h1>
     </>
   )
 }
