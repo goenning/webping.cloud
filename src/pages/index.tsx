@@ -160,16 +160,18 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
           <div>
             <h4>Providers</h4>
             {props.providers.map((provider) => (
-              <label className="flex items-center" key={provider.key}>
-                <input
-                  type="checkbox"
-                  className="form-checkbox"
-                  checked={selectedProviders.includes(provider.key)}
-                  onChange={toggleProviderFilter(provider.key)}
-                />
-                <CloudProviderLogo className="w-5 ml-1" providerKey={provider.key} providerName={provider.display_name} />
-                <span className="ml-1">{provider.display_name}</span>
-              </label>
+              <div key={provider.key}>
+                <label className="inline-flex cursor-pointer items-center">
+                  <input
+                    type="checkbox"
+                    className="form-checkbox"
+                    checked={selectedProviders.includes(provider.key)}
+                    onChange={toggleProviderFilter(provider.key)}
+                  />
+                  <CloudProviderLogo className="w-5 ml-1" providerKey={provider.key} providerName={provider.display_name} />
+                  <span className="ml-1">{provider.display_name}</span>
+                </label>
+              </div>
             ))}
           </div>
 
@@ -181,24 +183,26 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                 const allSelected = props.continents[continent].some((x) => selectedCountries.includes(x))
                 return (
                   <div key={continent} className="mr-3 md:mr-0">
-                    <div>
-                      <input type="checkbox" className="form-checkbox" checked={allSelected} onChange={toggleContinentFilter(continent)} />
+                    <label className="inline-flex cursor-pointer items-center">
+                      <input type="checkbox" className="form-checkbox cursor-pointer" checked={allSelected} onChange={toggleContinentFilter(continent)} />
                       <h6 className="inline ml-1">{continent}</h6>
-                    </div>
+                    </label>
                     <div key={continent}>
                       {props.continents[continent].map((country, idx) => {
                         const isLastCountry = idx === props.continents[continent].length - 1
                         return (
-                          <label className={`flex items-center ${isLastCountry && 'mb-4'}`} key={country}>
-                            <input
-                              type="checkbox"
-                              className="form-checkbox"
-                              checked={selectedCountries.includes(country)}
-                              onChange={toggleCountryFilter(country)}
-                            />
-                            <CountryFlag countryCode={country} className="w-5 ml-1" />
-                            <CountryName countryCode={country} className="ml-1" />
-                          </label>
+                          <div key={country}>
+                            <label className={`inline-flex cursor-pointer items-center ${isLastCountry && 'mb-4'}`}>
+                              <input
+                                type="checkbox"
+                                className="form-checkbox"
+                                checked={selectedCountries.includes(country)}
+                                onChange={toggleCountryFilter(country)}
+                              />
+                              <CountryFlag countryCode={country} className="w-5 ml-1" />
+                              <CountryName countryCode={country} className="ml-1" />
+                            </label>
+                          </div>
                         )
                       })}
                     </div>
