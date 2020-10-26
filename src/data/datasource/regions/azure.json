@@ -259,7 +259,7 @@
             "country": "US",
             "location": "Washington",
             "continent": "North America",
-            "ping_url": "https://astwestus2.blob.core.windows.net/public/latency-test.json"
+            "ping_url": "https://wpcwestus2.blob.core.windows.net/public/latency-test.json"
         },
         {
             "key": "canadaeast",

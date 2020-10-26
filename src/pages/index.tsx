@@ -3,7 +3,6 @@ import Head from 'next/head'
 import { CloudProvider, CloudRegion, getAllCloudRegions, getAllProviders } from '@app/data'
 import { GetStaticPropsResult } from 'next'
 import { CloudProviderLogo, CountryFlag, CountryName } from '@app/components'
-import { median } from '@app/fns/math'
 import { delay, ping } from '@app/fns/time'
 
 interface CloudPingProps {
@@ -17,8 +16,7 @@ interface RegionLatency {
   key: string
   provider: CloudProvider
   region: CloudRegion
-  medianLatency: number
-  latencies: number[]
+  latency: number
 }
 
 export async function getStaticProps(): Promise<GetStaticPropsResult<CloudPingProps>> {
@@ -75,13 +73,12 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
           const latency = await ping(`${region.ping_url}`)
           setLatencyState((x) => {
             const key = `${provider.key}-${region.key}`
-            const latencies = [...(x[key]?.latencies || []), latency]
+            const prevLatency = x[key]?.latency
             const latest: RegionLatency = {
               key,
               provider,
               region,
-              medianLatency: median(latencies),
-              latencies,
+              latency: latency < prevLatency || !prevLatency ? latency : prevLatency,
             }
             return { ...x, ...{ [key]: latest } }
           })
@@ -91,7 +88,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
     }
 
     if (!cancelToken.cancel) {
-      await delay(2000)
+      await delay(1000)
       await pingAll(cancelToken)
     }
   }
@@ -109,8 +106,8 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
 
   const sortedRegions = Object.values(latencyState)
     .filter((x) => selectedProviders.includes(x.provider.key) && selectedCountries.includes(x.region.country))
-    .sort((a, b) => a.medianLatency - b.medianLatency)
-  const maxLatency = sortedRegions.length >= 1 ? sortedRegions[sortedRegions.length - 1].medianLatency : 0
+    .sort((a, b) => a.latency - b.latency)
+  const maxLatency = sortedRegions.length >= 1 ? sortedRegions[sortedRegions.length - 1].latency : 0
 
   const toggleProviderFilter = (providerKey: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedProviders((values) => {
@@ -163,7 +160,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
           <div>
             <h4>Providers</h4>
             {props.providers.map((provider) => (
-              <div key={provider.key}>
+              <label className="flex items-center" key={provider.key}>
                 <input
                   type="checkbox"
                   className="form-checkbox"
@@ -172,7 +169,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                 />
                 <CloudProviderLogo className="w-5 ml-1" providerKey={provider.key} providerName={provider.display_name} />
                 <span className="ml-1">{provider.display_name}</span>
-              </div>
+              </label>
             ))}
           </div>
 
@@ -217,8 +214,8 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
           <table style={{ width: '100%', borderSpacing: '5px', borderCollapse: 'separate' }}>
             <tbody>
               {sortedRegions.map((x) => {
-                const relative = ((x.medianLatency || 0) / maxLatency) * 100
-                const color = x.medianLatency < 80 ? 'ddffdd' : x.medianLatency < 200 ? 'fff0cc' : 'ffdddd'
+                const relative = ((x.latency || 0) / maxLatency) * 100
+                const color = x.latency < 80 ? 'ddffdd' : x.latency < 200 ? 'fff0cc' : 'ffdddd'
                 return (
                   <tr
                     key={x.key}
@@ -234,7 +231,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                           <div className="flex items-center">
                             <CountryFlag countryCode={x.region.country} className="w-5" />
                             <span className="ml-1">
-                              &middot; {x.region.location}, {x.region.country} &middot; {x.medianLatency}ms
+                              &middot; {x.region.location}, {x.region.country} &middot; {x.latency}ms
                             </span>
                           </div>
                         </div>
