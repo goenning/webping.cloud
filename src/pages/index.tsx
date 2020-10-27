@@ -159,6 +159,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
             {!isFilterOpen && <img src="/images/stripes.svg" alt="Show Filters" className="ml-0 w-4 h-4" />}
             {isFilterOpen && <img src="/images/close.svg" alt="Close Filters" className="ml-0 w-4 h-4" />}
           </button>
+          <h1 className="block md:hidden">Cloud Ping Test</h1>
         </div>
         <aside className={`w-full md:w-1/3 flex flex-col px-3 ${isFilterOpen ? 'block' : 'hidden md:block'}`}>
           <div>
@@ -247,8 +248,9 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
             </div>
           </div>
         </aside>
-        <section className="w-full md:w-2/3 flex flex-col items-center px-3">
+        <section className="w-full md:w-2/3 flex flex-col px-3">
           <img src="" id="url-ping" alt="Ping" style={{ display: 'none' }} />
+          <h1 className="hidden md:block">Cloud Ping Test</h1>
 
           <table style={{ width: '100%', borderSpacing: '5px', borderCollapse: 'separate' }}>
             <tbody>
