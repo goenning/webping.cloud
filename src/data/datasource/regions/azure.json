@@ -1,353 +1,349 @@
-{
-    "url": "https://azure.microsoft.com/en-us/global-infrastructure/geographies/",
-    "regions": [
-        {
-            "key": "eastasia",
-            "display_name": "East Asia",
-            "country": "HK",
-            "location": "Hong Kong",
-            "continent": "Asia",
-            "ping_url": "https://asteastasia.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "southeastasia",
-            "display_name": "Southeast Asia",
-            "country": "SG",
-            "location": "Singapore",
-            "continent": "Asia",
-            "ping_url": "https://astsoutheastasia.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "australiaeast",
-            "display_name": "Australia East",
-            "country": "AU",
-            "location": "New South Wales",
-            "continent": "Oceania",
-            "ping_url": "https://astaustraliaeast.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "australiasoutheast",
-            "display_name": "Australia Southeast",
-            "country": "AU",
-            "location": "Victoria",
-            "continent": "Oceania",
-            "ping_url": "https://astaustraliasoutheast.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "australiacentral",
-            "display_name": "Australia Central",
-            "country": "AU",
-            "location": "Canberra",
-            "continent": "Oceania",
-            "ping_url": "https://astaustraliacentral.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "australiacentral2",
-            "display_name": "Australia Central 2",
-            "country": "AU",
-            "location": "Canberra",
-            "continent": "Oceania",
-            "ping_url": "https://astaustraliacentral2.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "chinaeast",
-            "display_name": "China East",
-            "country": "CN",
-            "location": "Shanghai",
-            "continent": "Asia"
-        },
-        {
-            "key": "chinanorth",
-            "display_name": "China North",
-            "country": "CN",
-            "location": "Beijing",
-            "continent": "Asia"
-        },
-        {
-            "key": "chinaeast2",
-            "display_name": "China East 2",
-            "country": "CN",
-            "location": "Shanghai",
-            "continent": "Asia"
-        },
-        {
-            "key": "chinanorth2",
-            "display_name": "China North 2",
-            "country": "CN",
-            "location": "Beijing",
-            "continent": "Asia"
-        },
-        {
-            "key": "centralindia",
-            "display_name": "Central India",
-            "country": "IN",
-            "location": "Pune",
-            "continent": "Asia",
-            "ping_url": "https://astcentralindia.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "westindia",
-            "display_name": "West India",
-            "country": "IN",
-            "location": "Mumbai",
-            "continent": "Asia",
-            "ping_url": "https://astwestindia.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "southindia",
-            "display_name": "South India",
-            "country": "IN",
-            "location": "Chennai",
-            "continent": "Asia",
-            "ping_url": "https://astsouthindia.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "japaneast",
-            "display_name": "Japan East",
-            "country": "JP",
-            "location": "Tokyo",
-            "continent": "Asia",
-            "ping_url": "https://astjapaneast.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "japanwest",
-            "display_name": "Japan West",
-            "country": "JP",
-            "location": "Osaka",
-            "continent": "Asia",
-            "ping_url": "https://astjapanwest.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "koreacentral",
-            "display_name": "Korea Central",
-            "country": "KR",
-            "location": "Seoul",
-            "continent": "Asia",
-            "ping_url": "https://astkoreacentral.blob.core.windows.net/public/latency-test.json"
-
-        },
-        {
-            "key": "koreasouth",
-            "display_name": "Korea South",
-            "country": "KR",
-            "location": "Busan",
-            "continent": "Asia",
-            "ping_url": "https://astkoreasouth.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "northeurope",
-            "display_name": "North Europe",
-            "country": "IE",
-            "location": "Dublin",
-            "continent": "Europe",
-            "ping_url": "https://astnortheurope.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "westeurope",
-            "display_name": "West Europe",
-            "country": "NL",
-            "location": "Amsterdam",
-            "continent": "Europe",
-            "ping_url": "https://astwesteurope.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "francecentral",
-            "display_name": "France Central",
-            "country": "FR",
-            "location": "Paris",
-            "continent": "Europe",
-            "ping_url": "https://astfrancecentral.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "francesouth",
-            "display_name": "France South",
-            "country": "FR",
-            "location": "Marseille",
-            "continent": "Europe"
-        },
-        {
-            "key": "ukwest",
-            "display_name": "UK West",
-            "country": "UK",
-            "location": "Cardiff",
-            "continent": "Europe",
-            "ping_url": "https://astukwest.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "uksouth",
-            "display_name": "UK South",
-            "country": "UK",
-            "location": "London",
-            "continent": "Europe",
-            "ping_url": "https://astuksouth.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "germanywestcentral",
-            "display_name": "Germany West Central",
-            "country": "DE",
-            "location": "Frankfurt",
-            "continent": "Europe",
-            "ping_url": "https://astgermanywestcentral.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "germanynorth",
-            "display_name": "Germany North",
-            "country": "DE",
-            "location": "Berlin",
-            "continent": "Europe",
-            "ping_url": "https://astgermanynorth.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "eastus",
-            "display_name": "East US",
-            "country": "US",
-            "location": "Virginia",
-            "continent": "North America",
-            "ping_url": "https://asteastus.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "eastus2",
-            "display_name": "East US 2",
-            "country": "US",
-            "location": "Virginia",
-            "continent": "North America",
-            "ping_url": "https://asteastus2.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "centralus",
-            "display_name": "Central US",
-            "country": "US",
-            "location": "Iowa",
-            "continent": "North America",
-            "ping_url": "https://astcentralus.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "northcentralus",
-            "display_name": "North Central US",
-            "country": "US",
-            "location": "Illinois",
-            "continent": "North America",
-            "ping_url": "https://astnorthcentralus.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "southcentralus",
-            "display_name": "South Central US",
-            "country": "US",
-            "location": "Texas",
-            "continent": "North America",
-            "ping_url": "https://astsouthcentralus.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "westcentralus",
-            "display_name": "West Central US",
-            "country": "US",
-            "location": "Wyoming",
-            "continent": "North America",
-            "ping_url": "https://astwestcentralus.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "westus",
-            "display_name": "West US",
-            "country": "US",
-            "location": "California",
-            "continent": "North America",
-            "ping_url": "https://astwestus.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "westus2",
-            "display_name": "West US 2",
-            "country": "US",
-            "location": "Washington",
-            "continent": "North America",
-            "ping_url": "https://wpcwestus2.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "canadaeast",
-            "display_name": "Canada East",
-            "country": "CA",
-            "location": "Quebec City",
-            "continent": "North America",
-            "ping_url": "https://astcanadaeast.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "canadacentral",
-            "display_name": "Canada Central",
-            "country": "CA",
-            "location": "Toronto",
-            "continent": "North America",
-            "ping_url": "https://astcanadacentral.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "brazilsouth",
-            "display_name": "Brazil South",
-            "country": "BR",
-            "location": "Sao Paulo",
-            "continent": "South America",
-            "ping_url": "https://astbrazilsouth.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "brazilsoutheast",
-            "display_name": "Brazil Southeast",
-            "country": "BR",
-            "location": "Rio de Janeiro",
-            "continent": "South America",
-            "ping_url": "https://astbrazilsoutheast.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "southafricanorth",
-            "display_name": "South Africa North",
-            "country": "ZA",
-            "location": "Johannesburg",
-            "continent": "Africa",
-            "ping_url": "https://astsouthafricanorth.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "southafricawest",
-            "display_name": "South Africa West",
-            "country": "ZA",
-            "location": "Cape Town",
-            "continent": "Africa",
-            "ping_url": "https://astsouthafricawest.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "norwayeast",
-            "display_name": "Norway West",
-            "country": "NO",
-            "location": "Oslo",
-            "continent": "Europe",
-            "ping_url": "https://astnorwayeast.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "switzerlandwest",
-            "display_name": "Switzerland West",
-            "country": "CH",
-            "location": "Geneva",
-            "continent": "Europe",
-            "ping_url": "https://astswitzerlandwest.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "switzerlandnorth",
-            "display_name": "Switzerland North",
-            "country": "CH",
-            "location": "Zürich",
-            "continent": "Europe",
-            "ping_url": "https://astswitzerlandnorth.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "uaecentral",
-            "display_name": "UAE Central",
-            "country": "AE",
-            "location": "Abu Dhabi",
-            "continent": "Middle East",
-            "ping_url": "https://astuaecentral.blob.core.windows.net/public/latency-test.json"
-        },
-        {
-            "key": "uaenorth",
-            "display_name": "UAE North",
-            "country": "AE",
-            "location": "Dubai",
-            "continent": "Middle East",
-            "ping_url": "https://astuaenorth.blob.core.windows.net/public/latency-test.json"
-        }
-    ]
-}
+[
+  {
+    "key": "eastasia",
+    "display_name": "East Asia",
+    "country": "HK",
+    "location": "Hong Kong",
+    "continent": "Asia",
+    "ping_url": "https://asteastasia.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "southeastasia",
+    "display_name": "Southeast Asia",
+    "country": "SG",
+    "location": "Singapore",
+    "continent": "Asia",
+    "ping_url": "https://astsoutheastasia.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "australiaeast",
+    "display_name": "Australia East",
+    "country": "AU",
+    "location": "New South Wales",
+    "continent": "Oceania",
+    "ping_url": "https://astaustraliaeast.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "australiasoutheast",
+    "display_name": "Australia Southeast",
+    "country": "AU",
+    "location": "Victoria",
+    "continent": "Oceania",
+    "ping_url": "https://astaustraliasoutheast.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "australiacentral",
+    "display_name": "Australia Central",
+    "country": "AU",
+    "location": "Canberra",
+    "continent": "Oceania",
+    "ping_url": "https://astaustraliacentral.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "australiacentral2",
+    "display_name": "Australia Central 2",
+    "country": "AU",
+    "location": "Canberra",
+    "continent": "Oceania",
+    "ping_url": "https://astaustraliacentral2.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "chinaeast",
+    "display_name": "China East",
+    "country": "CN",
+    "location": "Shanghai",
+    "continent": "Asia"
+  },
+  {
+    "key": "chinanorth",
+    "display_name": "China North",
+    "country": "CN",
+    "location": "Beijing",
+    "continent": "Asia"
+  },
+  {
+    "key": "chinaeast2",
+    "display_name": "China East 2",
+    "country": "CN",
+    "location": "Shanghai",
+    "continent": "Asia"
+  },
+  {
+    "key": "chinanorth2",
+    "display_name": "China North 2",
+    "country": "CN",
+    "location": "Beijing",
+    "continent": "Asia"
+  },
+  {
+    "key": "centralindia",
+    "display_name": "Central India",
+    "country": "IN",
+    "location": "Pune",
+    "continent": "Asia",
+    "ping_url": "https://astcentralindia.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "westindia",
+    "display_name": "West India",
+    "country": "IN",
+    "location": "Mumbai",
+    "continent": "Asia",
+    "ping_url": "https://astwestindia.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "southindia",
+    "display_name": "South India",
+    "country": "IN",
+    "location": "Chennai",
+    "continent": "Asia",
+    "ping_url": "https://astsouthindia.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "japaneast",
+    "display_name": "Japan East",
+    "country": "JP",
+    "location": "Tokyo",
+    "continent": "Asia",
+    "ping_url": "https://astjapaneast.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "japanwest",
+    "display_name": "Japan West",
+    "country": "JP",
+    "location": "Osaka",
+    "continent": "Asia",
+    "ping_url": "https://astjapanwest.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "koreacentral",
+    "display_name": "Korea Central",
+    "country": "KR",
+    "location": "Seoul",
+    "continent": "Asia",
+    "ping_url": "https://astkoreacentral.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "koreasouth",
+    "display_name": "Korea South",
+    "country": "KR",
+    "location": "Busan",
+    "continent": "Asia",
+    "ping_url": "https://astkoreasouth.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "northeurope",
+    "display_name": "North Europe",
+    "country": "IE",
+    "location": "Dublin",
+    "continent": "Europe",
+    "ping_url": "https://astnortheurope.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "westeurope",
+    "display_name": "West Europe",
+    "country": "NL",
+    "location": "Amsterdam",
+    "continent": "Europe",
+    "ping_url": "https://astwesteurope.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "francecentral",
+    "display_name": "France Central",
+    "country": "FR",
+    "location": "Paris",
+    "continent": "Europe",
+    "ping_url": "https://astfrancecentral.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "francesouth",
+    "display_name": "France South",
+    "country": "FR",
+    "location": "Marseille",
+    "continent": "Europe"
+  },
+  {
+    "key": "ukwest",
+    "display_name": "UK West",
+    "country": "UK",
+    "location": "Cardiff",
+    "continent": "Europe",
+    "ping_url": "https://astukwest.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "uksouth",
+    "display_name": "UK South",
+    "country": "UK",
+    "location": "London",
+    "continent": "Europe",
+    "ping_url": "https://astuksouth.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "germanywestcentral",
+    "display_name": "Germany West Central",
+    "country": "DE",
+    "location": "Frankfurt",
+    "continent": "Europe",
+    "ping_url": "https://astgermanywestcentral.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "germanynorth",
+    "display_name": "Germany North",
+    "country": "DE",
+    "location": "Berlin",
+    "continent": "Europe",
+    "ping_url": "https://astgermanynorth.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "eastus",
+    "display_name": "East US",
+    "country": "US",
+    "location": "Virginia",
+    "continent": "North America",
+    "ping_url": "https://asteastus.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "eastus2",
+    "display_name": "East US 2",
+    "country": "US",
+    "location": "Virginia",
+    "continent": "North America",
+    "ping_url": "https://asteastus2.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "centralus",
+    "display_name": "Central US",
+    "country": "US",
+    "location": "Iowa",
+    "continent": "North America",
+    "ping_url": "https://astcentralus.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "northcentralus",
+    "display_name": "North Central US",
+    "country": "US",
+    "location": "Illinois",
+    "continent": "North America",
+    "ping_url": "https://astnorthcentralus.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "southcentralus",
+    "display_name": "South Central US",
+    "country": "US",
+    "location": "Texas",
+    "continent": "North America",
+    "ping_url": "https://astsouthcentralus.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "westcentralus",
+    "display_name": "West Central US",
+    "country": "US",
+    "location": "Wyoming",
+    "continent": "North America",
+    "ping_url": "https://astwestcentralus.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "westus",
+    "display_name": "West US",
+    "country": "US",
+    "location": "California",
+    "continent": "North America",
+    "ping_url": "https://astwestus.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "westus2",
+    "display_name": "West US 2",
+    "country": "US",
+    "location": "Washington",
+    "continent": "North America",
+    "ping_url": "https://wpcwestus2.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "canadaeast",
+    "display_name": "Canada East",
+    "country": "CA",
+    "location": "Quebec City",
+    "continent": "North America",
+    "ping_url": "https://astcanadaeast.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "canadacentral",
+    "display_name": "Canada Central",
+    "country": "CA",
+    "location": "Toronto",
+    "continent": "North America",
+    "ping_url": "https://astcanadacentral.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "brazilsouth",
+    "display_name": "Brazil South",
+    "country": "BR",
+    "location": "Sao Paulo",
+    "continent": "South America",
+    "ping_url": "https://astbrazilsouth.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "brazilsoutheast",
+    "display_name": "Brazil Southeast",
+    "country": "BR",
+    "location": "Rio de Janeiro",
+    "continent": "South America",
+    "ping_url": "https://astbrazilsoutheast.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "southafricanorth",
+    "display_name": "South Africa North",
+    "country": "ZA",
+    "location": "Johannesburg",
+    "continent": "Africa",
+    "ping_url": "https://astsouthafricanorth.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "southafricawest",
+    "display_name": "South Africa West",
+    "country": "ZA",
+    "location": "Cape Town",
+    "continent": "Africa",
+    "ping_url": "https://astsouthafricawest.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "norwayeast",
+    "display_name": "Norway West",
+    "country": "NO",
+    "location": "Oslo",
+    "continent": "Europe",
+    "ping_url": "https://astnorwayeast.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "switzerlandwest",
+    "display_name": "Switzerland West",
+    "country": "CH",
+    "location": "Geneva",
+    "continent": "Europe",
+    "ping_url": "https://astswitzerlandwest.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "switzerlandnorth",
+    "display_name": "Switzerland North",
+    "country": "CH",
+    "location": "Zürich",
+    "continent": "Europe",
+    "ping_url": "https://astswitzerlandnorth.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "uaecentral",
+    "display_name": "UAE Central",
+    "country": "AE",
+    "location": "Abu Dhabi",
+    "continent": "Middle East",
+    "ping_url": "https://astuaecentral.blob.core.windows.net/public/latency-test.json"
+  },
+  {
+    "key": "uaenorth",
+    "display_name": "UAE North",
+    "country": "AE",
+    "location": "Dubai",
+    "continent": "Middle East",
+    "ping_url": "https://astuaenorth.blob.core.windows.net/public/latency-test.json"
+  }
+]

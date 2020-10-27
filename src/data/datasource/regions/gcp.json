@@ -1,189 +1,186 @@
-{
-    "url": "https://cloud.google.com/about/locations/",
-    "regions": [
-        {
-            "key": "asia-east1",
-            "display_name": "Taiwan",
-            "country": "TW",
-            "location": "Taiwan",
-            "continent": "Asia",
-            "ping_url": "https://asia-east1-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "asia-east2",
-            "display_name": "Hong Kong",
-            "country": "HK",
-            "location": "Hong Kong",
-            "continent": "Asia",
-            "ping_url": "https://asia-east2-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "asia-northeast1",
-            "display_name": "Tokyo",
-            "country": "JP",
-            "location": "Tokyo",
-            "continent": "Asia",
-            "ping_url": "https://asia-northeast1-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "asia-northeast2",
-            "display_name": "Osaka",
-            "country": "JP",
-            "location": "Osaka",
-            "continent": "Asia",
-            "ping_url": "https://asia-northeast2-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "asia-northeast3",
-            "display_name": "Seoul",
-            "country": "KR",
-            "location": "Seoul",
-            "continent": "Asia",
-            "ping_url": "https://asia-northeast3-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "asia-south1",
-            "display_name": "Mumbai",
-            "country": "IN",
-            "location": "Mumbai",
-            "continent": "Asia",
-            "ping_url": "https://asia-south1-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "asia-southeast1",
-            "display_name": "Singapore",
-            "country": "SG",
-            "location": "Singapore",
-            "continent": "Asia",
-            "ping_url": "https://asia-southeast1-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "asia-southeast2",
-            "display_name": "Jakarta",
-            "country": "ID",
-            "location": "Jakarta",
-            "continent": "Asia",
-            "ping_url": "https://asia-southeast2-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "australia-southeast1",
-            "display_name": "Sydney",
-            "country": "AU",
-            "location": "Sydney",
-            "continent": "Oceania",
-            "ping_url": "https://australia-southeast1-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "europe-north1",
-            "display_name": "Finland",
-            "country": "FI",
-            "location": "Hamina",
-            "continent": "Europe",
-            "ping_url": "https://europe-north1-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "europe-west1",
-            "display_name": "Belgium",
-            "country": "BE",
-            "location": "Belgium",
-            "continent": "Europe",
-            "ping_url": "https://europe-west1-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "europe-west2",
-            "display_name": "London",
-            "country": "UK",
-            "location": "London",
-            "continent": "Europe",
-            "ping_url": "https://europe-west2-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "europe-west3",
-            "display_name": "Frankfurt",
-            "country": "DE",
-            "location": "Frankfurt",
-            "continent": "Europe",
-            "ping_url": "https://europe-west3-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "europe-west4",
-            "display_name": "Netherlands",
-            "country": "NL",
-            "location": "Netherlands",
-            "continent": "Europe",
-            "ping_url": "https://europe-west4-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "europe-west6",
-            "display_name": "Switzerland",
-            "country": "CH",
-            "location": "Switzerland",
-            "continent": "Europe",
-            "ping_url": "https://europe-west6-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "northamerica-northeast1",
-            "display_name": "Montreal",
-            "country": "CA",
-            "location": "Montreal",
-            "continent": "North America",
-            "ping_url": "https://northamerica-northeast1-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "southamerica-east1",
-            "display_name": "São Paulo",
-            "country": "BR",
-            "location": "São Paulo",
-            "continent": "South America",
-            "ping_url": "https://southamerica-east1-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "us-central1",
-            "display_name": "Iowa",
-            "country": "US",
-            "location": "Iowa",
-            "continent": "North America",
-            "ping_url": "https://us-central1-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "us-east1",
-            "display_name": "South Carolina",
-            "country": "US",
-            "location": "South Carolina",
-            "continent": "North America",
-            "ping_url": "https://us-east1-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "us-east4",
-            "display_name": "Virginia",
-            "country": "US",
-            "location": "Virginia",
-            "continent": "North America",
-            "ping_url": "https://us-east4-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "us-west1",
-            "display_name": "Oregon",
-            "country": "US",
-            "location": "Oregon",
-            "continent": "North America",
-            "ping_url": "https://us-west1-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "us-west2",
-            "display_name": "California",
-            "country": "US",
-            "location": "California",
-            "continent": "North America",
-            "ping_url": "https://us-west2-a-gce.cloudharmony.net/probe/ping.js"
-        },
-        {
-            "key": "us-west3",
-            "display_name": "Utah",
-            "country": "US",
-            "location": "Utah",
-            "continent": "North America",
-            "ping_url": "https://us-west3-gce.cloudharmony.net/probe/ping.js"
-        }
-    ]
-}
+[
+  {
+    "key": "asia-east1",
+    "display_name": "Taiwan",
+    "country": "TW",
+    "location": "Taiwan",
+    "continent": "Asia",
+    "ping_url": "https://asia-east1-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "asia-east2",
+    "display_name": "Hong Kong",
+    "country": "HK",
+    "location": "Hong Kong",
+    "continent": "Asia",
+    "ping_url": "https://asia-east2-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "asia-northeast1",
+    "display_name": "Tokyo",
+    "country": "JP",
+    "location": "Tokyo",
+    "continent": "Asia",
+    "ping_url": "https://asia-northeast1-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "asia-northeast2",
+    "display_name": "Osaka",
+    "country": "JP",
+    "location": "Osaka",
+    "continent": "Asia",
+    "ping_url": "https://asia-northeast2-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "asia-northeast3",
+    "display_name": "Seoul",
+    "country": "KR",
+    "location": "Seoul",
+    "continent": "Asia",
+    "ping_url": "https://asia-northeast3-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "asia-south1",
+    "display_name": "Mumbai",
+    "country": "IN",
+    "location": "Mumbai",
+    "continent": "Asia",
+    "ping_url": "https://asia-south1-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "asia-southeast1",
+    "display_name": "Singapore",
+    "country": "SG",
+    "location": "Singapore",
+    "continent": "Asia",
+    "ping_url": "https://asia-southeast1-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "asia-southeast2",
+    "display_name": "Jakarta",
+    "country": "ID",
+    "location": "Jakarta",
+    "continent": "Asia",
+    "ping_url": "https://asia-southeast2-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "australia-southeast1",
+    "display_name": "Sydney",
+    "country": "AU",
+    "location": "Sydney",
+    "continent": "Oceania",
+    "ping_url": "https://australia-southeast1-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "europe-north1",
+    "display_name": "Finland",
+    "country": "FI",
+    "location": "Hamina",
+    "continent": "Europe",
+    "ping_url": "https://europe-north1-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "europe-west1",
+    "display_name": "Belgium",
+    "country": "BE",
+    "location": "Belgium",
+    "continent": "Europe",
+    "ping_url": "https://europe-west1-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "europe-west2",
+    "display_name": "London",
+    "country": "UK",
+    "location": "London",
+    "continent": "Europe",
+    "ping_url": "https://europe-west2-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "europe-west3",
+    "display_name": "Frankfurt",
+    "country": "DE",
+    "location": "Frankfurt",
+    "continent": "Europe",
+    "ping_url": "https://europe-west3-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "europe-west4",
+    "display_name": "Netherlands",
+    "country": "NL",
+    "location": "Netherlands",
+    "continent": "Europe",
+    "ping_url": "https://europe-west4-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "europe-west6",
+    "display_name": "Switzerland",
+    "country": "CH",
+    "location": "Switzerland",
+    "continent": "Europe",
+    "ping_url": "https://europe-west6-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "northamerica-northeast1",
+    "display_name": "Montreal",
+    "country": "CA",
+    "location": "Montreal",
+    "continent": "North America",
+    "ping_url": "https://northamerica-northeast1-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "southamerica-east1",
+    "display_name": "São Paulo",
+    "country": "BR",
+    "location": "São Paulo",
+    "continent": "South America",
+    "ping_url": "https://southamerica-east1-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "us-central1",
+    "display_name": "Iowa",
+    "country": "US",
+    "location": "Iowa",
+    "continent": "North America",
+    "ping_url": "https://us-central1-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "us-east1",
+    "display_name": "South Carolina",
+    "country": "US",
+    "location": "South Carolina",
+    "continent": "North America",
+    "ping_url": "https://us-east1-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "us-east4",
+    "display_name": "Virginia",
+    "country": "US",
+    "location": "Virginia",
+    "continent": "North America",
+    "ping_url": "https://us-east4-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "us-west1",
+    "display_name": "Oregon",
+    "country": "US",
+    "location": "Oregon",
+    "continent": "North America",
+    "ping_url": "https://us-west1-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "us-west2",
+    "display_name": "California",
+    "country": "US",
+    "location": "California",
+    "continent": "North America",
+    "ping_url": "https://us-west2-a-gce.cloudharmony.net/probe/ping.js"
+  },
+  {
+    "key": "us-west3",
+    "display_name": "Utah",
+    "country": "US",
+    "location": "Utah",
+    "continent": "North America",
+    "ping_url": "https://us-west3-gce.cloudharmony.net/probe/ping.js"
+  }
+]

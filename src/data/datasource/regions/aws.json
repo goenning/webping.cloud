@@ -1,189 +1,186 @@
-{
-    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
-    "regions": [
-        {
-            "key": "us-east-2",
-            "display_name": "US East (Ohio)",
-            "country": "US",
-            "location": "Ohio",
-            "continent": "North America",
-            "ping_url": "https://dynamodb.us-east-2.amazonaws.com/ping"
-        },
-        {
-            "key": "us-east-1",
-            "display_name": "US East (N. Virginia)",
-            "country": "US",
-            "location": "North Virginia",
-            "continent": "North America",
-            "ping_url": "https://dynamodb.us-east-1.amazonaws.com/ping"
-        },
-        {
-            "key": "us-west-1",
-            "display_name": "US West (N. California)",
-            "country": "US",
-            "location": "North California",
-            "continent": "North America",
-            "ping_url": "https://dynamodb.us-west-1.amazonaws.com/ping"
-        },
-        {
-            "key": "us-west-2",
-            "display_name": "US West (Oregon)",
-            "country": "US",
-            "location": "Oregon",
-            "continent": "North America",
-            "ping_url": "https://dynamodb.us-west-2.amazonaws.com/ping"
-        },
-        {
-            "key": "af-south-1",
-            "display_name": "Africa (Cape Town)",
-            "country": "ZA",
-            "location": "Cape Town",
-            "continent": "Africa",
-            "ping_url": "https://dynamodb.af-south-1.amazonaws.com/ping"
-        },
-        {
-            "key": "ap-east-1",
-            "display_name": "Asia Pacific (Hong Kong)",
-            "country": "HK",
-            "location": "Hong Kong",
-            "continent": "Asia",
-            "ping_url": "https://dynamodb.ap-east-1.amazonaws.com/ping"
-        },
-        {
-            "key": "ap-south-1",
-            "display_name": "Asia Pacific (Mumbai)",
-            "country": "IN",
-            "location": "Mumbai",
-            "continent": "Asia",
-            "ping_url": "https://dynamodb.ap-south-1.amazonaws.com/ping"
-        },
-        {
-            "key": "ap-northeast-3",
-            "display_name": "Asia Pacific (Osaka)",
-            "country": "JP",
-            "location": "Osaka",
-            "continent": "Asia",
-            "ping_url": "https://dynamodb.ap-northeast-3.amazonaws.com/ping"
-        },
-        {
-            "key": "ap-northeast-2",
-            "display_name": "Asia Pacific (Seoul)",
-            "country": "KR",
-            "location": "Seoul",
-            "continent": "Asia",
-            "ping_url": "https://dynamodb.ap-northeast-2.amazonaws.com/ping"
-        },
-        {
-            "key": "ap-southeast-1",
-            "display_name": "Asia Pacific (Singapore)",
-            "country": "SG",
-            "location": "Singapore",
-            "continent": "Asia",
-            "ping_url": "https://dynamodb.ap-southeast-1.amazonaws.com/ping"
-        },
-        {
-            "key": "ap-southeast-2",
-            "display_name": "Asia Pacific (Sydney)",
-            "country": "AU",
-            "location": "Sydney",
-            "continent": "Oceania",
-            "ping_url": "https://dynamodb.ap-southeast-2.amazonaws.com/ping"
-        },
-        {
-            "key": "ap-northeast-1",
-            "display_name": "Asia Pacific (Tokyo)",
-            "country": "JP",
-            "location": "Tokyo",
-            "continent": "Asia",
-            "ping_url": "https://dynamodb.ap-northeast-1.amazonaws.com/ping"
-        },
-        {
-            "key": "ca-central-1",
-            "display_name": "Canada (Central)",
-            "country": "CA",
-            "location": "Montreal",
-            "continent": "North America",
-            "ping_url": "https://dynamodb.ca-central-1.amazonaws.com/ping"
-        },
-        {
-            "key": "cn-north-1",
-            "display_name": "China (Beijing)",
-            "country": "CN",
-            "location": "Beijing",
-            "continent": "Asia",
-            "ping_url": "https://dynamodb.cn-north-1.amazonaws.com.cn/ping"
-        },
-        {
-            "key": "cn-northwest-1",
-            "display_name": "China (Ningxia)",
-            "country": "CN",
-            "location": "Ningxia",
-            "continent": "Asia",
-            "ping_url": "https://dynamodb.cn-northwest-1.amazonaws.com.cn/ping"
-        },
-        {
-            "key": "eu-central-1",
-            "display_name": "EU (Frankfurt)",
-            "country": "DE",
-            "location": "Frankfurt",
-            "continent": "Europe",
-            "ping_url": "https://dynamodb.eu-central-1.amazonaws.com/ping"
-        },
-        {
-            "key": "eu-west-1",
-            "display_name": "EU (Ireland)",
-            "country": "IE",
-            "location": "Dublin",
-            "continent": "Europe",
-            "ping_url": "https://dynamodb.eu-west-1.amazonaws.com/ping"
-        },
-        {
-            "key": "eu-west-2",
-            "display_name": "EU (London)",
-            "country": "UK",
-            "location": "London",
-            "continent": "Europe",
-            "ping_url": "https://dynamodb.eu-west-2.amazonaws.com/ping"
-        },
-        {
-            "key": "eu-south-1",
-            "display_name": "Europe (Milan)",
-            "country": "IT",
-            "location": "Milan",
-            "continent": "Europe",
-            "ping_url": "https://dynamodb.eu-south-1.amazonaws.com/ping"
-        },
-        {
-            "key": "eu-west-3",
-            "display_name": "EU (Paris)",
-            "country": "FR",
-            "location": "Paris",
-            "continent": "Europe",
-            "ping_url": "https://dynamodb.eu-west-3.amazonaws.com/ping"
-        },
-        {
-            "key": "eu-north-1",
-            "display_name": "EU (Stockholm)",
-            "country": "SE",
-            "location": "Stockholm",
-            "continent": "Europe",
-            "ping_url": "https://dynamodb.eu-north-1.amazonaws.com/ping"
-        },
-        {
-            "key": "me-south-1",
-            "display_name": "Middle East (Bahrain)",
-            "country": "BH",
-            "location": "Bahrain",
-            "continent": "Middle East",
-            "ping_url": "https://dynamodb.me-south-1.amazonaws.com/ping"
-        },
-        {
-            "key": "sa-east-1",
-            "display_name": "South America (São Paulo)",
-            "country": "BR",
-            "location": "São Paulo",
-            "continent": "South America",
-            "ping_url": "https://dynamodb.sa-east-1.amazonaws.com/ping"
-        }
-    ]
-}
+[
+  {
+    "key": "us-east-2",
+    "display_name": "US East (Ohio)",
+    "country": "US",
+    "location": "Ohio",
+    "continent": "North America",
+    "ping_url": "https://dynamodb.us-east-2.amazonaws.com/ping"
+  },
+  {
+    "key": "us-east-1",
+    "display_name": "US East (N. Virginia)",
+    "country": "US",
+    "location": "North Virginia",
+    "continent": "North America",
+    "ping_url": "https://dynamodb.us-east-1.amazonaws.com/ping"
+  },
+  {
+    "key": "us-west-1",
+    "display_name": "US West (N. California)",
+    "country": "US",
+    "location": "North California",
+    "continent": "North America",
+    "ping_url": "https://dynamodb.us-west-1.amazonaws.com/ping"
+  },
+  {
+    "key": "us-west-2",
+    "display_name": "US West (Oregon)",
+    "country": "US",
+    "location": "Oregon",
+    "continent": "North America",
+    "ping_url": "https://dynamodb.us-west-2.amazonaws.com/ping"
+  },
+  {
+    "key": "af-south-1",
+    "display_name": "Africa (Cape Town)",
+    "country": "ZA",
+    "location": "Cape Town",
+    "continent": "Africa",
+    "ping_url": "https://dynamodb.af-south-1.amazonaws.com/ping"
+  },
+  {
+    "key": "ap-east-1",
+    "display_name": "Asia Pacific (Hong Kong)",
+    "country": "HK",
+    "location": "Hong Kong",
+    "continent": "Asia",
+    "ping_url": "https://dynamodb.ap-east-1.amazonaws.com/ping"
+  },
+  {
+    "key": "ap-south-1",
+    "display_name": "Asia Pacific (Mumbai)",
+    "country": "IN",
+    "location": "Mumbai",
+    "continent": "Asia",
+    "ping_url": "https://dynamodb.ap-south-1.amazonaws.com/ping"
+  },
+  {
+    "key": "ap-northeast-3",
+    "display_name": "Asia Pacific (Osaka)",
+    "country": "JP",
+    "location": "Osaka",
+    "continent": "Asia",
+    "ping_url": "https://dynamodb.ap-northeast-3.amazonaws.com/ping"
+  },
+  {
+    "key": "ap-northeast-2",
+    "display_name": "Asia Pacific (Seoul)",
+    "country": "KR",
+    "location": "Seoul",
+    "continent": "Asia",
+    "ping_url": "https://dynamodb.ap-northeast-2.amazonaws.com/ping"
+  },
+  {
+    "key": "ap-southeast-1",
+    "display_name": "Asia Pacific (Singapore)",
+    "country": "SG",
+    "location": "Singapore",
+    "continent": "Asia",
+    "ping_url": "https://dynamodb.ap-southeast-1.amazonaws.com/ping"
+  },
+  {
+    "key": "ap-southeast-2",
+    "display_name": "Asia Pacific (Sydney)",
+    "country": "AU",
+    "location": "Sydney",
+    "continent": "Oceania",
+    "ping_url": "https://dynamodb.ap-southeast-2.amazonaws.com/ping"
+  },
+  {
+    "key": "ap-northeast-1",
+    "display_name": "Asia Pacific (Tokyo)",
+    "country": "JP",
+    "location": "Tokyo",
+    "continent": "Asia",
+    "ping_url": "https://dynamodb.ap-northeast-1.amazonaws.com/ping"
+  },
+  {
+    "key": "ca-central-1",
+    "display_name": "Canada (Central)",
+    "country": "CA",
+    "location": "Montreal",
+    "continent": "North America",
+    "ping_url": "https://dynamodb.ca-central-1.amazonaws.com/ping"
+  },
+  {
+    "key": "cn-north-1",
+    "display_name": "China (Beijing)",
+    "country": "CN",
+    "location": "Beijing",
+    "continent": "Asia",
+    "ping_url": "https://dynamodb.cn-north-1.amazonaws.com.cn/ping"
+  },
+  {
+    "key": "cn-northwest-1",
+    "display_name": "China (Ningxia)",
+    "country": "CN",
+    "location": "Ningxia",
+    "continent": "Asia",
+    "ping_url": "https://dynamodb.cn-northwest-1.amazonaws.com.cn/ping"
+  },
+  {
+    "key": "eu-central-1",
+    "display_name": "EU (Frankfurt)",
+    "country": "DE",
+    "location": "Frankfurt",
+    "continent": "Europe",
+    "ping_url": "https://dynamodb.eu-central-1.amazonaws.com/ping"
+  },
+  {
+    "key": "eu-west-1",
+    "display_name": "EU (Ireland)",
+    "country": "IE",
+    "location": "Dublin",
+    "continent": "Europe",
+    "ping_url": "https://dynamodb.eu-west-1.amazonaws.com/ping"
+  },
+  {
+    "key": "eu-west-2",
+    "display_name": "EU (London)",
+    "country": "UK",
+    "location": "London",
+    "continent": "Europe",
+    "ping_url": "https://dynamodb.eu-west-2.amazonaws.com/ping"
+  },
+  {
+    "key": "eu-south-1",
+    "display_name": "Europe (Milan)",
+    "country": "IT",
+    "location": "Milan",
+    "continent": "Europe",
+    "ping_url": "https://dynamodb.eu-south-1.amazonaws.com/ping"
+  },
+  {
+    "key": "eu-west-3",
+    "display_name": "EU (Paris)",
+    "country": "FR",
+    "location": "Paris",
+    "continent": "Europe",
+    "ping_url": "https://dynamodb.eu-west-3.amazonaws.com/ping"
+  },
+  {
+    "key": "eu-north-1",
+    "display_name": "EU (Stockholm)",
+    "country": "SE",
+    "location": "Stockholm",
+    "continent": "Europe",
+    "ping_url": "https://dynamodb.eu-north-1.amazonaws.com/ping"
+  },
+  {
+    "key": "me-south-1",
+    "display_name": "Middle East (Bahrain)",
+    "country": "BH",
+    "location": "Bahrain",
+    "continent": "Middle East",
+    "ping_url": "https://dynamodb.me-south-1.amazonaws.com/ping"
+  },
+  {
+    "key": "sa-east-1",
+    "display_name": "South America (São Paulo)",
+    "country": "BR",
+    "location": "São Paulo",
+    "continent": "South America",
+    "ping_url": "https://dynamodb.sa-east-1.amazonaws.com/ping"
+  }
+]
