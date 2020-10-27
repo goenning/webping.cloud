@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "src": "/public/(.*)",
+      "headers": { "cache-control": "s-maxage=86400" },
+      "dest": "/public/$1"
+    }
+  ]
+}
