@@ -57,7 +57,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
   const [latencyState, setLatencyState] = useState<{ [key: string]: RegionLatency }>({})
 
   async function pingAll(cancelToken: { cancel: boolean }) {
-    await delay(500)
+    await delay(1000)
 
     for (const provider of props.providers) {
       for (const region of props.regions[provider.key]) {
@@ -143,18 +143,21 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
   return (
     <>
       <Head>
-        <title>webping.cloud</title>
+        <title>Cloud Ping Test · webping.cloud</title>
+        <meta
+          name="description"
+          content="Test your network latency to the nearest cloud provider in AWS, Azure, GCP and DigitalOcean directly from your browser."
+        />
       </Head>
 
       <div className="container mx-auto flex flex-wrap py-6">
-        <div className="px-3 w-full mb-2">
+        <div className="px-4 w-full mb-2">
           <button
             onClick={() => setIsFilterOpen(!isFilterOpen)}
             className="md:hidden border-gray-400 bg-white rounded shadow font-bold rounded py-2 px-4 inline-flex items-center focus:outline-none float-right"
           >
-            <span>Filters</span>
-            {!isFilterOpen && <img src="/images/stripes.svg" alt="Show Filters" className="ml-2 w-4 h-4" />}
-            {isFilterOpen && <img src="/images/close.svg" alt="Close Filters" className="ml-2 w-4 h-4" />}
+            {!isFilterOpen && <img src="/images/stripes.svg" alt="Show Filters" className="ml-0 w-4 h-4" />}
+            {isFilterOpen && <img src="/images/close.svg" alt="Close Filters" className="ml-0 w-4 h-4" />}
           </button>
         </div>
         <aside className={`w-full md:w-1/3 flex flex-col px-3 ${isFilterOpen ? 'block' : 'hidden md:block'}`}>
@@ -210,6 +213,37 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                   </div>
                 )
               })}
+            </div>
+          </div>
+          <div className="mb-4">
+            <h4>FAQ</h4>
+            <div className="mt-2">
+              <span className="font-medium">1. How does it work?</span>
+              <p className="text-gray-700">This website constantly sends a HTTP request to a server in each region/cloud provider.</p>
+            </div>
+            <div className="mt-2">
+              <span className="font-medium">2. How accurate is it?</span>
+              <p className="text-gray-700">
+                It can be considered fairly accurate for general public usage, but due to browser restrictions, this website uses a HTTP ping instead of a
+                TCP/ICMP ping. HTTP ping will always have an additional overhead, which can negatively impact the latency displayed here.
+              </p>
+            </div>
+            <div className="mt-2">
+              <span className="font-medium">3. Is it fair to compare different providers?</span>
+              <p className="text-gray-700">
+                In most cases, no. Each provider uses a different HTTP web server which can add a few extra milliseconds. When pinging multiple providers
+                simultaneously, always keep in mind that some providers might actually have a slighly lower latency than what is currently displayed.
+              </p>
+            </div>
+            <div className="mt-2">
+              <span className="font-medium">4. Any accurate alternative?</span>
+              <p className="text-gray-700">
+                You will need a ICMP/TCP tool for that. Use{' '}
+                <a href="#" className="text-blue-700 hover:underline">
+                  webcloud.ping-cli
+                </a>{' '}
+                to test multiple cloud providers directly from your terminal.
+              </p>
             </div>
           </div>
         </aside>
