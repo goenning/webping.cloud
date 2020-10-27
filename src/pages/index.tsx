@@ -238,13 +238,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
             </div>
             <div className="mt-2">
               <span className="font-medium">4. Any accurate alternative?</span>
-              <p className="text-gray-700">
-                You will need a ICMP/TCP tool for that. Use{' '}
-                <a href="#" className="text-blue-700 hover:underline">
-                  webcloud.ping-cli
-                </a>{' '}
-                to test multiple cloud providers directly from your terminal.
-              </p>
+              <p className="text-gray-700">Yes, you should use a ICMP/TCP tool for that.</p>
             </div>
           </div>
         </aside>
