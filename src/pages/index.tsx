@@ -113,10 +113,11 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
     }
   }, [selectedProviders, selectedCountries])
 
-  const sortedRegions = Object.values(latencyState)
-    .filter((x) => selectedProviders.includes(x.provider.key) && selectedCountries.includes(x.region.country))
-    .sort((a, b) => (a.latency && b.latency ? a.latency - b.latency : 0))
-  const maxLatency = [...sortedRegions].reverse().find((x) => !!x.latency)?.latency || 0
+  const filteredRegions = Object.values(latencyState).filter((x) => selectedProviders.includes(x.provider.key) && selectedCountries.includes(x.region.country))
+  const sortedRegionsWithLatency = filteredRegions.filter((x) => x.latency).sort((a, b) => (a.latency && b.latency ? a.latency - b.latency : 1))
+  const othersRegions = filteredRegions.filter((x) => !x.latency)
+  const sortedRegions = [...sortedRegionsWithLatency, ...othersRegions]
+  const maxLatency = sortedRegionsWithLatency.length > 1 ? sortedRegionsWithLatency[sortedRegionsWithLatency.length - 1].latency : 0
 
   const toggleProviderFilter = (providerKey: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedProviders((values) => {
