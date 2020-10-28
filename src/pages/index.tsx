@@ -199,7 +199,9 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                     checked={selectedProviders.includes(provider.key)}
                     onChange={toggleProviderFilter(provider.key)}
                   />
-                  <CloudProviderLogo className="w-5 ml-1" providerKey={provider.key} providerName={provider.display_name} />
+                  <div className="w-5 ml-1">
+                    <CloudProviderLogo width="20px" providerKey={provider.key} providerName={provider.display_name} />
+                  </div>
                   <span className="ml-1">{provider.display_name}</span>
                 </label>
               </div>
@@ -230,7 +232,9 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                                 checked={selectedCountries.includes(country)}
                                 onChange={toggleCountryFilter(country)}
                               />
-                              <CountryFlag countryCode={country} className="w-5 ml-1" />
+                              <div className="w-5 ml-1">
+                                <CountryFlag width="20px" countryCode={country} />
+                              </div>
                               <CountryName countryCode={country} className="ml-1" />
                             </label>
                           </div>
@@ -286,11 +290,13 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                   >
                     <td className="rounded py-1">
                       <div className="flex items-center">
-                        <CloudProviderLogo className="w-8 ml-3" providerKey={x.provider.key} providerName={x.provider.display_name} />
+                        <div className="w-8 ml-3">
+                          <CloudProviderLogo width="30px" providerKey={x.provider.key} providerName={x.provider.display_name} />
+                        </div>
                         <div className="ml-3">
                           <span>{x.region.key}</span>
                           <div className="flex items-center">
-                            <CountryFlag countryCode={x.region.country} className="w-5" />
+                            <CountryFlag width="20px" countryCode={x.region.country} />
                             <span className="ml-1">
                               &middot; {x.region.location}, {x.region.country} {x.latency && <>&middot; {x.latency}ms</>}
                             </span>
