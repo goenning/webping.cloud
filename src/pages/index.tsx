@@ -172,7 +172,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
           name="twitter:description"
           content="Test your network latency to the nearest cloud provider in AWS, Azure, GCP and DigitalOcean directly from your browser"
         />
-        <meta name="twitter:url" content="http://www.yourdomain.com" />
+        <meta name="twitter:url" content="https://webping.cloud" />
         <meta name="twitter:image" content="https://webping.cloud/images/large-screenshot.png" />
       </Head>
 
