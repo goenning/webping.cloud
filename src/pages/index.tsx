@@ -7,26 +7,31 @@ import { delay, ping } from '@app/fns/time'
 
 interface CloudPingProps {
   providers: CloudProvider[]
-  regions: Record<string, CloudRegion[]>
   continents: Record<string, string[]>
   countries: string[]
-}
-
-interface RegionLatency {
-  key: string
-  provider: CloudProvider
-  region: CloudRegion
-  latency: number
+  initialState: LatencyState
 }
 
 export async function getStaticProps(): Promise<GetStaticPropsResult<CloudPingProps>> {
   const providers = getAllProviders()
   const regions = getAllCloudRegions()
 
+  const initialState: LatencyState = {}
+  for (const provider of providers) {
+    for (const region of regions[provider.key]) {
+      const key = `${provider.key}-${region.key}`
+      initialState[key] = {
+        key,
+        provider,
+        region,
+      }
+    }
+  }
+
   return {
     props: {
+      initialState,
       providers,
-      regions,
       continents: Object.values(regions).reduce((prev, curr) => {
         for (const region of curr) {
           if (!prev[region.continent]) {
@@ -50,42 +55,45 @@ export async function getStaticProps(): Promise<GetStaticPropsResult<CloudPingPr
   }
 }
 
+interface LatencyState {
+  [key: string]: RegionLatency
+}
+
+interface RegionLatency {
+  key: string
+  provider: CloudProvider
+  region: CloudRegion
+  latency?: number
+}
+
 export default function CloudPing(props: CloudPingProps): JSX.Element {
   const [isFilterOpen, setIsFilterOpen] = useState(false)
   const [selectedProviders, setSelectedProviders] = useState(props.providers.map((x) => x.key))
   const [selectedCountries, setSelectedCountries] = useState(props.countries)
-  const [latencyState, setLatencyState] = useState<{ [key: string]: RegionLatency }>({})
+  const [latencyState, setLatencyState] = useState<LatencyState>(props.initialState)
 
   async function pingAll(cancelToken: { cancel: boolean }) {
     await delay(1000)
 
-    for (const provider of props.providers) {
-      for (const region of props.regions[provider.key]) {
-        if (cancelToken.cancel) {
-          return
-        }
-
-        if (!region.ping_url || !selectedCountries.includes(region.country) || !selectedProviders.includes(provider.key)) {
-          continue
-        }
-
-        try {
-          await ping(`${region.ping_url}`)
-          const latency = await ping(`${region.ping_url}`)
-          setLatencyState((x) => {
-            const key = `${provider.key}-${region.key}`
-            const prevLatency = x[key]?.latency
-            const latest: RegionLatency = {
-              key,
-              provider,
-              region,
-              latency: latency < prevLatency || !prevLatency ? latency : prevLatency,
-            }
-            return { ...x, ...{ [key]: latest } }
-          })
-          // eslint-disable-next-line no-empty
-        } catch {}
+    for (const item of Object.values(latencyState)) {
+      if (cancelToken.cancel) {
+        return
       }
+
+      if (!item.region.ping_url || !selectedCountries.includes(item.region.country) || !selectedProviders.includes(item.provider.key)) {
+        continue
+      }
+
+      try {
+        await ping(`${item.region.ping_url}`)
+        const latency = await ping(`${item.region.ping_url}`)
+        setLatencyState((x) => {
+          const newItem = { ...x[item.key] }
+          newItem.latency = latency
+          return { ...x, ...{ [item.key]: newItem } }
+        })
+        // eslint-disable-next-line no-empty
+      } catch {}
     }
 
     if (!cancelToken.cancel) {
@@ -107,8 +115,8 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
 
   const sortedRegions = Object.values(latencyState)
     .filter((x) => selectedProviders.includes(x.provider.key) && selectedCountries.includes(x.region.country))
-    .sort((a, b) => a.latency - b.latency)
-  const maxLatency = sortedRegions.length >= 1 ? sortedRegions[sortedRegions.length - 1].latency : 0
+    .sort((a, b) => (a.latency && b.latency ? a.latency - b.latency : 0))
+  const maxLatency = [...sortedRegions].reverse().find((x) => !!x.latency)?.latency || 0
 
   const toggleProviderFilter = (providerKey: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedProviders((values) => {
@@ -249,8 +257,8 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
           <table style={{ width: '100%', borderSpacing: '5px', borderCollapse: 'separate' }}>
             <tbody>
               {sortedRegions.map((x) => {
-                const relative = ((x.latency || 0) / maxLatency) * 100
-                const color = x.latency < 80 ? 'ddffdd' : x.latency < 200 ? 'fff0cc' : 'ffdddd'
+                const relative = ((x.latency || 0) / (maxLatency || 1)) * 100
+                const color = x.latency && x.latency < 80 ? 'ddffdd' : x.latency && x.latency < 200 ? 'fff0cc' : 'ffdddd'
                 return (
                   <tr
                     key={x.key}
@@ -266,7 +274,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                           <div className="flex items-center">
                             <CountryFlag countryCode={x.region.country} className="w-5" />
                             <span className="ml-1">
-                              &middot; {x.region.location}, {x.region.country} &middot; {x.latency}ms
+                              &middot; {x.region.location}, {x.region.country} {x.latency && <>&middot; {x.latency}ms</>}
                             </span>
                           </div>
                         </div>
