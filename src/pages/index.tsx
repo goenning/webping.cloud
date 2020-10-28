@@ -75,7 +75,8 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
   async function pingAll(cancelToken: { cancel: boolean }) {
     await delay(1000)
 
-    for (const item of Object.values(latencyState)) {
+    const shuffledItems = Object.values(latencyState).sort(() => 0.5 - Math.random())
+    for (const item of shuffledItems) {
       if (cancelToken.cancel) {
         return
       }
@@ -89,7 +90,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
         const latency = await ping(`${item.region.ping_url}`)
         setLatencyState((x) => {
           const newItem = { ...x[item.key] }
-          newItem.latency = latency
+          newItem.latency = newItem.latency && newItem.latency < latency ? newItem.latency : latency
           return { ...x, ...{ [item.key]: newItem } }
         })
         // eslint-disable-next-line no-empty
