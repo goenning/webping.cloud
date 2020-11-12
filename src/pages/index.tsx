@@ -270,6 +270,10 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
               <span className="font-medium">4. Any accurate alternative?</span>
               <p className="text-gray-700">Yes, you should use a ICMP/TCP tool for that.</p>
             </div>
+            <div className="mt-2">
+              <span className="font-medium">Open Source</span>
+              <p className="text-gray-700">This website is <a className="text-blue-700 text-bold" href="https://github.com/goenning/webping.cloud">open source</a>. Help us make it better and keep it up-to-date.</p>
+            </div>
           </div>
         </aside>
         <section className="w-full md:w-2/3 flex flex-col px-3">
