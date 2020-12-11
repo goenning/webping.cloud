@@ -180,7 +180,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
         <div className="px-4 w-full mb-2">
           <button
             onClick={() => setIsFilterOpen(!isFilterOpen)}
-            className="md:hidden border-gray-400 bg-white rounded shadow font-bold rounded py-2 px-4 inline-flex items-center focus:outline-none float-right"
+            className="md:hidden border-gray-400 bg-white rounded shadow font-bold py-2 px-4 inline-flex items-center focus:outline-none float-right"
           >
             {!isFilterOpen && <img src="/images/stripes.svg" alt="Show Filters" className="ml-0 w-4 h-4" />}
             {isFilterOpen && <img src="/images/close.svg" alt="Close Filters" className="ml-0 w-4 h-4" />}
@@ -272,7 +272,13 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
             </div>
             <div className="mt-2">
               <span className="font-medium">Open Source</span>
-              <p className="text-gray-700">This website is <a className="text-blue-700 text-bold" href="https://github.com/goenning/webping.cloud">open source</a>. Help us make it better and keep it up-to-date.</p>
+              <p className="text-gray-700">
+                This website is{' '}
+                <a className="text-blue-700 text-bold" href="https://github.com/goenning/webping.cloud">
+                  open source
+                </a>
+                . Help us make it better and keep it up-to-date.
+              </p>
             </div>
           </div>
         </aside>
