@@ -25,3 +25,8 @@ h5 {
 h6 {
   @apply text-lg font-medium
 }
+
+.form-checkbox {
+  @apply rounded border-gray-300 text-blue-600 shadow-sm;
+  @apply focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+}

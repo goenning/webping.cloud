@@ -16,5 +16,5 @@ module.exports = {
   },
   variants: {},
   // eslint-disable-next-line no-undef
-  plugins: [require('@tailwindcss/custom-forms')],
+  plugins: [require('@tailwindcss/forms')],
 }

@@ -5,7 +5,7 @@
     "country": "HK",
     "location": "Hong Kong",
     "continent": "Asia",
-    "ping_url": "https://asteastasia.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpceastasia.blob.core.windows.net"
   },
   {
     "key": "southeastasia",
@@ -13,7 +13,7 @@
     "country": "SG",
     "location": "Singapore",
     "continent": "Asia",
-    "ping_url": "https://astsoutheastasia.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcsoutheastasia.blob.core.windows.net"
   },
   {
     "key": "australiaeast",
@@ -21,7 +21,7 @@
     "country": "AU",
     "location": "New South Wales",
     "continent": "Oceania",
-    "ping_url": "https://astaustraliaeast.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcaustraliaeast.blob.core.windows.net"
   },
   {
     "key": "australiasoutheast",
@@ -29,7 +29,7 @@
     "country": "AU",
     "location": "Victoria",
     "continent": "Oceania",
-    "ping_url": "https://astaustraliasoutheast.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcaustraliasoutheast.blob.core.windows.net"
   },
   {
     "key": "australiacentral",
@@ -37,15 +37,14 @@
     "country": "AU",
     "location": "Canberra",
     "continent": "Oceania",
-    "ping_url": "https://astaustraliacentral.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcaustraliacentral.blob.core.windows.net"
   },
   {
     "key": "australiacentral2",
     "display_name": "Australia Central 2",
     "country": "AU",
     "location": "Canberra",
-    "continent": "Oceania",
-    "ping_url": "https://astaustraliacentral2.blob.core.windows.net/public/latency-test.json"
+    "continent": "Oceania"
   },
   {
     "key": "chinaeast",
@@ -81,7 +80,7 @@
     "country": "IN",
     "location": "Pune",
     "continent": "Asia",
-    "ping_url": "https://astcentralindia.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpccentralindia.blob.core.windows.net"
   },
   {
     "key": "westindia",
@@ -89,7 +88,7 @@
     "country": "IN",
     "location": "Mumbai",
     "continent": "Asia",
-    "ping_url": "https://astwestindia.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcwestindia.blob.core.windows.net"
   },
   {
     "key": "southindia",
@@ -97,7 +96,7 @@
     "country": "IN",
     "location": "Chennai",
     "continent": "Asia",
-    "ping_url": "https://astsouthindia.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcsouthindia.blob.core.windows.net"
   },
   {
     "key": "japaneast",
@@ -105,7 +104,7 @@
     "country": "JP",
     "location": "Tokyo",
     "continent": "Asia",
-    "ping_url": "https://astjapaneast.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcjapaneast.blob.core.windows.net"
   },
   {
     "key": "japanwest",
@@ -113,7 +112,7 @@
     "country": "JP",
     "location": "Osaka",
     "continent": "Asia",
-    "ping_url": "https://astjapanwest.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcjapanwest.blob.core.windows.net"
   },
   {
     "key": "koreacentral",
@@ -121,7 +120,7 @@
     "country": "KR",
     "location": "Seoul",
     "continent": "Asia",
-    "ping_url": "https://astkoreacentral.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpckoreacentral.blob.core.windows.net"
   },
   {
     "key": "koreasouth",
@@ -129,7 +128,7 @@
     "country": "KR",
     "location": "Busan",
     "continent": "Asia",
-    "ping_url": "https://astkoreasouth.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpckoreasouth.blob.core.windows.net"
   },
   {
     "key": "northeurope",
@@ -137,7 +136,7 @@
     "country": "IE",
     "location": "Dublin",
     "continent": "Europe",
-    "ping_url": "https://astnortheurope.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcnortheurope.blob.core.windows.net"
   },
   {
     "key": "westeurope",
@@ -145,7 +144,7 @@
     "country": "NL",
     "location": "Amsterdam",
     "continent": "Europe",
-    "ping_url": "https://astwesteurope.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcwesteurope.blob.core.windows.net"
   },
   {
     "key": "francecentral",
@@ -153,7 +152,7 @@
     "country": "FR",
     "location": "Paris",
     "continent": "Europe",
-    "ping_url": "https://astfrancecentral.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcfrancecentral.blob.core.windows.net"
   },
   {
     "key": "francesouth",
@@ -168,7 +167,7 @@
     "country": "UK",
     "location": "Cardiff",
     "continent": "Europe",
-    "ping_url": "https://astukwest.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcukwest.blob.core.windows.net"
   },
   {
     "key": "uksouth",
@@ -176,7 +175,7 @@
     "country": "UK",
     "location": "London",
     "continent": "Europe",
-    "ping_url": "https://astuksouth.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcuksouth.blob.core.windows.net"
   },
   {
     "key": "germanywestcentral",
@@ -184,7 +183,7 @@
     "country": "DE",
     "location": "Frankfurt",
     "continent": "Europe",
-    "ping_url": "https://astgermanywestcentral.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcgermanywestcentral.blob.core.windows.net"
   },
   {
     "key": "germanynorth",
@@ -192,7 +191,7 @@
     "country": "DE",
     "location": "Berlin",
     "continent": "Europe",
-    "ping_url": "https://astgermanynorth.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://speedtestden.blob.core.windows.net"
   },
   {
     "key": "eastus",
@@ -200,7 +199,7 @@
     "country": "US",
     "location": "Virginia",
     "continent": "North America",
-    "ping_url": "https://asteastus.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpceastus.blob.core.windows.net"
   },
   {
     "key": "eastus2",
@@ -208,7 +207,7 @@
     "country": "US",
     "location": "Virginia",
     "continent": "North America",
-    "ping_url": "https://asteastus2.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpceastus2.blob.core.windows.net"
   },
   {
     "key": "centralus",
@@ -216,7 +215,7 @@
     "country": "US",
     "location": "Iowa",
     "continent": "North America",
-    "ping_url": "https://astcentralus.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpccentralus.blob.core.windows.net"
   },
   {
     "key": "northcentralus",
@@ -224,7 +223,7 @@
     "country": "US",
     "location": "Illinois",
     "continent": "North America",
-    "ping_url": "https://astnorthcentralus.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcnorthcentralus.blob.core.windows.net"
   },
   {
     "key": "southcentralus",
@@ -232,7 +231,7 @@
     "country": "US",
     "location": "Texas",
     "continent": "North America",
-    "ping_url": "https://astsouthcentralus.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcsouthcentralus.blob.core.windows.net"
   },
   {
     "key": "westcentralus",
@@ -240,7 +239,7 @@
     "country": "US",
     "location": "Wyoming",
     "continent": "North America",
-    "ping_url": "https://astwestcentralus.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcwestcentralus.blob.core.windows.net"
   },
   {
     "key": "westus",
@@ -248,7 +247,7 @@
     "country": "US",
     "location": "California",
     "continent": "North America",
-    "ping_url": "https://astwestus.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcwestus.blob.core.windows.net"
   },
   {
     "key": "westus2",
@@ -256,7 +255,7 @@
     "country": "US",
     "location": "Washington",
     "continent": "North America",
-    "ping_url": "https://wpcwestus2.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcwestus2.blob.core.windows.net"
   },
   {
     "key": "canadaeast",
@@ -264,7 +263,7 @@
     "country": "CA",
     "location": "Quebec City",
     "continent": "North America",
-    "ping_url": "https://astcanadaeast.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpccanadaeast.blob.core.windows.net"
   },
   {
     "key": "canadacentral",
@@ -272,7 +271,7 @@
     "country": "CA",
     "location": "Toronto",
     "continent": "North America",
-    "ping_url": "https://astcanadacentral.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpccanadacentral.blob.core.windows.net"
   },
   {
     "key": "brazilsouth",
@@ -280,15 +279,14 @@
     "country": "BR",
     "location": "Sao Paulo",
     "continent": "South America",
-    "ping_url": "https://astbrazilsouth.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcbrazilsouth.blob.core.windows.net"
   },
   {
     "key": "brazilsoutheast",
     "display_name": "Brazil Southeast",
     "country": "BR",
     "location": "Rio de Janeiro",
-    "continent": "South America",
-    "ping_url": "https://astbrazilsoutheast.blob.core.windows.net/public/latency-test.json"
+    "continent": "South America"
   },
   {
     "key": "southafricanorth",
@@ -296,15 +294,14 @@
     "country": "ZA",
     "location": "Johannesburg",
     "continent": "Africa",
-    "ping_url": "https://astsouthafricanorth.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcsouthafricanorth.blob.core.windows.net"
   },
   {
     "key": "southafricawest",
     "display_name": "South Africa West",
     "country": "ZA",
     "location": "Cape Town",
-    "continent": "Africa",
-    "ping_url": "https://astsouthafricawest.blob.core.windows.net/public/latency-test.json"
+    "continent": "Africa"
   },
   {
     "key": "norwayeast",
@@ -312,7 +309,7 @@
     "country": "NO",
     "location": "Oslo",
     "continent": "Europe",
-    "ping_url": "https://astnorwayeast.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcnorwayeast.blob.core.windows.net"
   },
   {
     "key": "switzerlandwest",
@@ -320,7 +317,7 @@
     "country": "CH",
     "location": "Geneva",
     "continent": "Europe",
-    "ping_url": "https://astswitzerlandwest.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://speedtestchw.blob.core.windows.net"
   },
   {
     "key": "switzerlandnorth",
@@ -328,15 +325,14 @@
     "country": "CH",
     "location": "Zürich",
     "continent": "Europe",
-    "ping_url": "https://astswitzerlandnorth.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcswitzerlandnorth.blob.core.windows.net"
   },
   {
     "key": "uaecentral",
     "display_name": "UAE Central",
     "country": "AE",
     "location": "Abu Dhabi",
-    "continent": "Middle East",
-    "ping_url": "https://astuaecentral.blob.core.windows.net/public/latency-test.json"
+    "continent": "Middle East"
   },
   {
     "key": "uaenorth",
@@ -344,6 +340,6 @@
     "country": "AE",
     "location": "Dubai",
     "continent": "Middle East",
-    "ping_url": "https://astuaenorth.blob.core.windows.net/public/latency-test.json"
+    "ping_url": "https://wpcuaenorth.blob.core.windows.net"
   }
 ]
