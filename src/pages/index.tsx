@@ -153,12 +153,12 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
   return (
     <>
       <Head>
-        <title>Cloud Ping Test · webping.cloud</title>
+        <title>Ping test for Azure, AWS, GCP and others · webping.cloud</title>
         <meta
           name="description"
           content="Test your network latency to the nearest cloud provider in AWS, Azure, GCP and DigitalOcean directly from your browser"
         />
-        <meta property="og:title" content="Cloud Ping Test test for popular providers" />
+        <meta property="og:title" content="Ping test for Azure, AWS, GCP and others · webping.cloud" />
         <meta property="og:url" content="https://webping.cloud" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://webping.cloud/images/large-screenshot.png" />
@@ -167,7 +167,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
           content="Test your network latency to the nearest cloud provider in AWS, Azure, GCP and DigitalOcean directly from your browser"
         />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Cloud Ping Test for popular providers" />
+        <meta name="twitter:title" content="Ping test for Azure, AWS, GCP and others · webping.cloud" />
         <meta
           name="twitter:description"
           content="Test your network latency to the nearest cloud provider in AWS, Azure, GCP and DigitalOcean directly from your browser"
