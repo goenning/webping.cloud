@@ -44,40 +44,35 @@
     "display_name": "Australia Central 2",
     "country": "AU",
     "location": "Canberra",
-    "continent": "Oceania",
-    "ping_url": "https://avstraliacentral2.blob.core.windows.net/ping"
+    "continent": "Oceania"
   },
   {
     "key": "chinaeast",
     "display_name": "China East",
     "country": "CN",
     "location": "Shanghai",
-    "continent": "Asia",
-    "ping_url": "https://avchinaeast.blob.core.chinacloudapi.cn/ping"
+    "continent": "Asia"
   },
   {
     "key": "chinanorth",
     "display_name": "China North",
     "country": "CN",
     "location": "Beijing",
-    "continent": "Asia",
-    "ping_url": "https://avchinanorth.blob.core.chinacloudapi.cn/ping"
+    "continent": "Asia"
   },
   {
     "key": "chinaeast2",
     "display_name": "China East 2",
     "country": "CN",
     "location": "Shanghai",
-    "continent": "Asia",
-    "ping_url": "https://avchinaeast2.blob.core.chinacloudapi.cn/ping"
+    "continent": "Asia"
   },
   {
     "key": "chinanorth2",
     "display_name": "China North 2",
     "country": "CN",
     "location": "Beijing",
-    "continent": "Asia",
-    "ping_url": "https://avchinanorth2.blob.core.chinacloudapi.cn/ping"
+    "continent": "Asia"
   },
   {
     "key": "centralindia",
