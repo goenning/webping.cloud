@@ -19,6 +19,7 @@ const codeToName: { [code: string]: string } = {
   KR: 'South Korea',
   NL: 'Netherlands',
   NO: 'Norway',
+  MY: 'Malaysia',
   SE: 'Sweden',
   SG: 'Singapore',
   TW: 'Taiwan',

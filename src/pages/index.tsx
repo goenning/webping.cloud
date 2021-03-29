@@ -199,7 +199,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                     checked={selectedProviders.includes(provider.key)}
                     onChange={toggleProviderFilter(provider.key)}
                   />
-                  <div className="w-5 ml-1">
+                  <div className="w-5 ml-1 flex">
                     <CloudProviderLogo width="20px" providerKey={provider.key} providerName={provider.display_name} />
                   </div>
                   <span className="ml-1">{provider.display_name}</span>
@@ -232,7 +232,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
                                 checked={selectedCountries.includes(country)}
                                 onChange={toggleCountryFilter(country)}
                               />
-                              <div className="w-5 ml-1">
+                              <div className="w-5 ml-1 flex">
                                 <CountryFlag width="20px" countryCode={country} />
                               </div>
                               <CountryName countryCode={country} className="ml-1" />

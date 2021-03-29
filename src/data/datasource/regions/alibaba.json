@@ -1,0 +1,186 @@
+[
+  {
+    "key": "cn-beijing",
+    "display_name": "China (Beijing)",
+    "country": "CN",
+    "location": "Beijing",
+    "continent": "Asia",
+    "ping_url": "http://oss-cn-beijing.aliyuncs.com"
+  },
+  {
+    "display_name": "China (Hangzhou)",
+    "key": "cn-hangzhou",
+    "country": "CN",
+    "location": "Hangzhou",
+    "continent": "Asia",
+    "ping_url": "http://oss-cn-hangzhou.aliyuncs.com"
+  },
+  {
+    "display_name": "China (Shanghai)",
+    "key": "cn-shanghai",
+    "country": "CN",
+    "location": "Shanghai",
+    "continent": "Asia",
+    "ping_url": "http://oss-cn-shanghai.aliyuncs.com"
+  },
+  {
+    "display_name": "China (Qingdao)",
+    "key": "cn-qingdao",
+    "country": "CN",
+    "location": "Qingdao",
+    "continent": "Asia",
+    "ping_url": "http://oss-cn-qingdao.aliyuncs.com"
+  },
+  {
+    "display_name": "China (Zhangjiakou)",
+    "key": "cn-zhangjiakou",
+    "country": "CN",
+    "location": "Zhangjiakou",
+    "continent": "Asia",
+    "ping_url": "http://oss-cn-zhangjiakou.aliyuncs.com"
+  },
+  {
+    "display_name": "China (Hohhot)",
+    "key": "cn-huhehaote",
+    "country": "CN",
+    "location": "Hohhot",
+    "continent": "Asia",
+    "ping_url": "http://oss-cn-huhehaote.aliyuncs.com"
+  },
+  {
+    "display_name": "China (Ulanqab)",
+    "key": "cn-wulanchabu",
+    "country": "CN",
+    "location": "Ulanqab",
+    "continent": "Asia",
+    "ping_url": "http://oss-cn-wulanchabu.aliyuncs.com"
+  },
+  {
+    "display_name": "China (Shenzhen)",
+    "key": "cn-shenzhen",
+    "country": "CN",
+    "location": "Shenzhen",
+    "continent": "Asia",
+    "ping_url": "http://oss-cn-shenzhen.aliyuncs.com"
+  },
+  {
+    "display_name": "China (Heyuan)",
+    "key": "cn-heyuan",
+    "country": "CN",
+    "location": "Heyuan",
+    "continent": "Asia",
+    "ping_url": "http://oss-cn-heyuan.aliyuncs.com"
+  },
+  {
+    "display_name": "China (Guangzhou)",
+    "key": "cn-guangzhou",
+    "country": "CN",
+    "location": "Guangzhou",
+    "continent": "Asia",
+    "ping_url": "http://oss-cn-guangzhou.aliyuncs.com"
+  },
+  {
+    "display_name": "China (Chengdu)",
+    "key": "cn-chengdu",
+    "country": "CN",
+    "location": "Chengdu",
+    "continent": "Asia",
+    "ping_url": "http://oss-cn-chengdu.aliyuncs.com"
+  },
+  {
+    "display_name": "China (Hong Kong)",
+    "key": "cn-hongkong",
+    "country": "CN",
+    "location": "Hong Kong",
+    "continent": "Asia",
+    "ping_url": "http://oss-cn-hongkong.aliyuncs.com"
+  },
+  {
+    "display_name": "US (Silicon Valley)",
+    "key": "us-west-1",
+    "country": "US",
+    "location": "California",
+    "continent": "North America",
+    "ping_url": "http://oss-us-west-1.aliyuncs.com"
+  },
+  {
+    "display_name": "US (Virginia)",
+    "key": "us-east-1",
+    "country": "US",
+    "location": "Virginia",
+    "continent": "North America",
+    "ping_url": "http://oss-us-east-1.aliyuncs.com"
+  },
+  {
+    "display_name": "Singapore",
+    "key": "ap-southeast-1",
+    "country": "SG",
+    "location": "Singapore",
+    "continent": "Asia",
+    "ping_url": "http://oss-ap-southeast-1.aliyuncs.com"
+  },
+  {
+    "display_name": "Australia (Sydney)",
+    "key": "ap-southeast-2",
+    "country": "AU",
+    "location": "Sydney",
+    "continent": "Oceania",
+    "ping_url": "http://oss-ap-southeast-2.aliyuncs.com"
+  },
+  {
+    "display_name": "Malaysia (Kuala Lumpur)",
+    "key": "ap-southeast-3",
+    "country": "MY",
+    "location": "Kuala Lumpur",
+    "continent": "Asia",
+    "ping_url": "http://oss-ap-southeast-3.aliyuncs.com"
+  },
+  {
+    "display_name": "Indonesia (Jakarta)",
+    "key": "ap-southeast-5",
+    "country": "ID",
+    "location": "Jakarta",
+    "continent": "Asia",
+    "ping_url": "http://oss-ap-southeast-5.aliyuncs.com"
+  },
+  {
+    "display_name": "Japan (Tokyo)",
+    "key": "ap-northeast-1",
+    "country": "JP",
+    "location": "Tokyo",
+    "continent": "Asia",
+    "ping_url": "http://oss-ap-northeast-1.aliyuncs.com"
+  },
+  {
+    "display_name": "India (Mumbai)",
+    "key": "ap-south-1",
+    "country": "IN",
+    "location": "Mumbai",
+    "continent": "Asia",
+    "ping_url": "http://oss-ap-south-1.aliyuncs.com"
+  },
+  {
+    "display_name": "Germany (Frankfurt)",
+    "key": "eu-central-1",
+    "country": "DE",
+    "location": "Frankfurt",
+    "continent": "Europe",
+    "ping_url": "http://oss-eu-central-1.aliyuncs.com"
+  },
+  {
+    "display_name": "UK (London)",
+    "key": "eu-west-1",
+    "country": "UK",
+    "location": "London",
+    "continent": "Europe",
+    "ping_url": "http://oss-eu-west-1.aliyuncs.com"
+  },
+  {
+    "display_name": "UAE (Dubai)",
+    "key": "me-east-1",
+    "country": "AE",
+    "location": "Dubai",
+    "continent": "Middle East",
+    "ping_url": "http://oss-me-east-1.aliyuncs.com"
+  }
+]

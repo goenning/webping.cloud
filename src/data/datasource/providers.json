@@ -14,5 +14,9 @@
     {
         "key": "digitalocean",
         "display_name": "Digital Ocean"
+    },
+    {
+        "key": "alibaba",
+        "display_name": "Alibaba Cloud"
     }
 ]

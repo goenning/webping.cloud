@@ -5,7 +5,7 @@
     "country": "US",
     "location": "Ohio",
     "continent": "North America",
-    "ping_url": "https://dynamodb.us-east-2.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.us-east-2.amazonaws.com/ping"
   },
   {
     "key": "us-east-1",
@@ -13,7 +13,7 @@
     "country": "US",
     "location": "North Virginia",
     "continent": "North America",
-    "ping_url": "https://dynamodb.us-east-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.us-east-1.amazonaws.com/ping"
   },
   {
     "key": "us-west-1",
@@ -21,7 +21,7 @@
     "country": "US",
     "location": "North California",
     "continent": "North America",
-    "ping_url": "https://dynamodb.us-west-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.us-west-1.amazonaws.com/ping"
   },
   {
     "key": "us-west-2",
@@ -29,7 +29,7 @@
     "country": "US",
     "location": "Oregon",
     "continent": "North America",
-    "ping_url": "https://dynamodb.us-west-2.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.us-west-2.amazonaws.com/ping"
   },
   {
     "key": "af-south-1",
@@ -37,7 +37,7 @@
     "country": "ZA",
     "location": "Cape Town",
     "continent": "Africa",
-    "ping_url": "https://dynamodb.af-south-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.af-south-1.amazonaws.com/ping"
   },
   {
     "key": "ap-east-1",
@@ -45,7 +45,7 @@
     "country": "HK",
     "location": "Hong Kong",
     "continent": "Asia",
-    "ping_url": "https://dynamodb.ap-east-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.ap-east-1.amazonaws.com/ping"
   },
   {
     "key": "ap-south-1",
@@ -53,7 +53,7 @@
     "country": "IN",
     "location": "Mumbai",
     "continent": "Asia",
-    "ping_url": "https://dynamodb.ap-south-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.ap-south-1.amazonaws.com/ping"
   },
   {
     "key": "ap-northeast-3",
@@ -61,7 +61,7 @@
     "country": "JP",
     "location": "Osaka",
     "continent": "Asia",
-    "ping_url": "https://dynamodb.ap-northeast-3.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.ap-northeast-3.amazonaws.com/ping"
   },
   {
     "key": "ap-northeast-2",
@@ -69,7 +69,7 @@
     "country": "KR",
     "location": "Seoul",
     "continent": "Asia",
-    "ping_url": "https://dynamodb.ap-northeast-2.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.ap-northeast-2.amazonaws.com/ping"
   },
   {
     "key": "ap-southeast-1",
@@ -77,7 +77,7 @@
     "country": "SG",
     "location": "Singapore",
     "continent": "Asia",
-    "ping_url": "https://dynamodb.ap-southeast-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.ap-southeast-1.amazonaws.com/ping"
   },
   {
     "key": "ap-southeast-2",
@@ -85,7 +85,7 @@
     "country": "AU",
     "location": "Sydney",
     "continent": "Oceania",
-    "ping_url": "https://dynamodb.ap-southeast-2.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.ap-southeast-2.amazonaws.com/ping"
   },
   {
     "key": "ap-northeast-1",
@@ -93,7 +93,7 @@
     "country": "JP",
     "location": "Tokyo",
     "continent": "Asia",
-    "ping_url": "https://dynamodb.ap-northeast-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.ap-northeast-1.amazonaws.com/ping"
   },
   {
     "key": "ca-central-1",
@@ -101,7 +101,7 @@
     "country": "CA",
     "location": "Montreal",
     "continent": "North America",
-    "ping_url": "https://dynamodb.ca-central-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.ca-central-1.amazonaws.com/ping"
   },
   {
     "key": "cn-north-1",
@@ -109,7 +109,7 @@
     "country": "CN",
     "location": "Beijing",
     "continent": "Asia",
-    "ping_url": "https://dynamodb.cn-north-1.amazonaws.com.cn/ping"
+    "ping_url": "http://dynamodb.cn-north-1.amazonaws.com.cn/ping"
   },
   {
     "key": "cn-northwest-1",
@@ -117,7 +117,7 @@
     "country": "CN",
     "location": "Ningxia",
     "continent": "Asia",
-    "ping_url": "https://dynamodb.cn-northwest-1.amazonaws.com.cn/ping"
+    "ping_url": "http://dynamodb.cn-northwest-1.amazonaws.com.cn/ping"
   },
   {
     "key": "eu-central-1",
@@ -125,7 +125,7 @@
     "country": "DE",
     "location": "Frankfurt",
     "continent": "Europe",
-    "ping_url": "https://dynamodb.eu-central-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.eu-central-1.amazonaws.com/ping"
   },
   {
     "key": "eu-west-1",
@@ -133,7 +133,7 @@
     "country": "IE",
     "location": "Dublin",
     "continent": "Europe",
-    "ping_url": "https://dynamodb.eu-west-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.eu-west-1.amazonaws.com/ping"
   },
   {
     "key": "eu-west-2",
@@ -141,7 +141,7 @@
     "country": "UK",
     "location": "London",
     "continent": "Europe",
-    "ping_url": "https://dynamodb.eu-west-2.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.eu-west-2.amazonaws.com/ping"
   },
   {
     "key": "eu-south-1",
@@ -149,7 +149,7 @@
     "country": "IT",
     "location": "Milan",
     "continent": "Europe",
-    "ping_url": "https://dynamodb.eu-south-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.eu-south-1.amazonaws.com/ping"
   },
   {
     "key": "eu-west-3",
@@ -157,7 +157,7 @@
     "country": "FR",
     "location": "Paris",
     "continent": "Europe",
-    "ping_url": "https://dynamodb.eu-west-3.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.eu-west-3.amazonaws.com/ping"
   },
   {
     "key": "eu-north-1",
@@ -165,7 +165,7 @@
     "country": "SE",
     "location": "Stockholm",
     "continent": "Europe",
-    "ping_url": "https://dynamodb.eu-north-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.eu-north-1.amazonaws.com/ping"
   },
   {
     "key": "me-south-1",
@@ -173,7 +173,7 @@
     "country": "BH",
     "location": "Bahrain",
     "continent": "Middle East",
-    "ping_url": "https://dynamodb.me-south-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.me-south-1.amazonaws.com/ping"
   },
   {
     "key": "sa-east-1",
@@ -181,6 +181,6 @@
     "country": "BR",
     "location": "São Paulo",
     "continent": "South America",
-    "ping_url": "https://dynamodb.sa-east-1.amazonaws.com/ping"
+    "ping_url": "http://dynamodb.sa-east-1.amazonaws.com/ping"
   }
 ]
