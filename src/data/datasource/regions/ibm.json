@@ -1,0 +1,162 @@
+[
+  {
+    "key": "us-south",
+    "display_name": "US South",
+    "country": "US",
+    "location": "Dallas",
+    "continent": "North America",
+    "ping_url": "http://s3.us-south.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "us-east",
+    "display_name": "US East",
+    "country": "US",
+    "location": "Washington, D.C.",
+    "continent": "North America",
+    "ping_url": "http://s3.us-east.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "eu-gb",
+    "display_name": "EU United Kingdom",
+    "country": "UK",
+    "location": "London",
+    "continent": "Europe",
+    "ping_url": "http://s3.eu-gb.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "eu-de",
+    "display_name": "EU Germany",
+    "country": "DE",
+    "location": "Frankfurt",
+    "continent": "Europe",
+    "ping_url": "http://s3.eu-de.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "au-syd",
+    "display_name": "AP Australia",
+    "country": "AU",
+    "location": "Sydney",
+    "continent": "Oceania",
+    "ping_url": "http://s3.au-syd.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "jp-tok",
+    "display_name": "AP Tokyo",
+    "country": "JP",
+    "location": "Tokyo",
+    "continent": "Asia",
+    "ping_url": "http://s3.jp-tok.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "jp-osa",
+    "display_name": "AP Osaka",
+    "country": "JP",
+    "location": "Osaka",
+    "continent": "Asia",
+    "ping_url": "http://s3.jp-osa.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "ams03",
+    "display_name": "Amsterdam, Netherlands",
+    "country": "NL",
+    "location": "Amsterdam",
+    "continent": "Europe",
+    "ping_url": "http://s3.ams03.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "che01",
+    "display_name": "Chennai, India",
+    "country": "IN",
+    "location": "Chennai",
+    "continent": "Asia",
+    "ping_url": "http://s3.che01.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "hkg02",
+    "display_name": "Hong Kong S.A.R. of the PRC",
+    "country": "CN",
+    "location": "Hong Kong",
+    "continent": "Asia",
+    "ping_url": "http://s3.hkg02.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "mex01",
+    "display_name": "Mexico City, Mexico",
+    "country": "US",
+    "location": "Mexico City",
+    "continent": "North America",
+    "ping_url": "http://s3.mex01.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "mil01",
+    "display_name": "Milan, Italy",
+    "country": "IT",
+    "location": "Milan",
+    "continent": "Europe",
+    "ping_url": "http://s3.mil01.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "mon01",
+    "display_name": "Montrèal, Canada",
+    "country": "CA",
+    "location": "Montreal",
+    "continent": "North America",
+    "ping_url": "http://s3.mon01.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "osl01",
+    "display_name": "Oslo, Norway",
+    "country": "NO",
+    "location": "Oslo",
+    "continent": "Europe",
+    "ping_url": "http://s3.osl01.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "par01",
+    "display_name": "Paris, France",
+    "country": "FR",
+    "location": "Paris",
+    "continent": "Europe",
+    "ping_url": "http://s3.par01.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "sjc04",
+    "display_name": "San Jose, US",
+    "country": "US",
+    "location": "San Jose",
+    "continent": "North America",
+    "ping_url": "http://s3.sjc04.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "sao01",
+    "display_name": "São Paulo, Brazil",
+    "country": "BR",
+    "location": "São Paulo",
+    "continent": "South America",
+    "ping_url": "http://s3.sao01.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "seo01",
+    "display_name": "Seoul, South Korea",
+    "country": "KR",
+    "location": "Seoul",
+    "continent": "Asia",
+    "ping_url": "http://s3.seo01.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "sng01",
+    "display_name": "Singapore",
+    "country": "SG",
+    "location": "Singapore",
+    "continent": "Asia",
+    "ping_url": "http://s3.sng01.cloud-object-storage.appdomain.cloud"
+  },
+  {
+    "key": "tor01",
+    "display_name": "Toronto, Canada",
+    "country": "CA",
+    "location": "Toronto",
+    "continent": "North America",
+    "ping_url": "http://s3.tor01.cloud-object-storage.appdomain.cloud"
+  }
+]

@@ -16,6 +16,10 @@
         "display_name": "Alibaba Cloud"
     },
     {
+        "key": "ibm",
+        "display_name": "IBM Cloud"
+    },
+    {
         "key": "oracle",
         "display_name": "Oracle Cloud"
     },
