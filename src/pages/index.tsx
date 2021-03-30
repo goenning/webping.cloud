@@ -157,7 +157,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
   const nearestRegion = sortedRegions[0].region
   const nearestProvider = sortedRegions[0].provider
   const nearestLatency = `${sortedRegions[0].latency || 0}ms`
-  const tweetText = `My nearest cloud data center is in ${nearestRegion.location}, ${nearestRegion.country} (${nearestRegion.key}) from #${nearestProvider.key} (${nearestLatency}). Find yours on`
+  const tweetText = `My nearest cloud data center is in ${nearestRegion.location}, ${nearestRegion.country} (${nearestRegion.key}) from #${nearestProvider.key} (${nearestLatency}). Find yours on https://webping.cloud`
 
   return (
     <>
@@ -325,7 +325,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
             </tbody>
           </table>
         </section>
-        <a target="_blank" rel="noopener" className="inline-block fixed bottom-4 right-4" href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=https://webping.cloud`}>
+        <a target="_blank" rel="noopener" className="inline-block fixed bottom-4 right-4" href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`}>
           <div className="bt-tweet text-white font-medium py-2 px-2 lg:px-4 rounded-full h-10 flex cursor-pointer">
             <svg className="text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path
