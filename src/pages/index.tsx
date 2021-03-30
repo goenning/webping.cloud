@@ -150,28 +150,23 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
     })
   }
 
+  const title = 'Simultaneous ping test for all popular cloud providers · webping.cloud'
+  const description =
+    'Test your network latency to the nearest cloud provider in Microsoft Azure, Amazon Web Services, Google Cloud Platform and other cloud providers directly from your browser'
+
   return (
     <>
       <Head>
         <title>Ping test for Azure, AWS, GCP and others · webping.cloud</title>
-        <meta
-          name="description"
-          content="Test your network latency to the nearest cloud provider in AWS, Azure, GCP and DigitalOcean directly from your browser"
-        />
-        <meta property="og:title" content="Ping test for Azure, AWS, GCP and others · webping.cloud" />
+        <meta name="description" content={description} />
+        <meta property="og:title" content={title} />
         <meta property="og:url" content="https://webping.cloud" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://webping.cloud/images/large-screenshot.png" />
-        <meta
-          property="og:description"
-          content="Test your network latency to the nearest cloud provider in AWS, Azure, GCP and DigitalOcean directly from your browser"
-        />
+        <meta property="og:description" content={description} />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Ping test for Azure, AWS, GCP and others · webping.cloud" />
-        <meta
-          name="twitter:description"
-          content="Test your network latency to the nearest cloud provider in AWS, Azure, GCP and DigitalOcean directly from your browser"
-        />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
         <meta name="twitter:url" content="https://webping.cloud" />
         <meta name="twitter:image" content="https://webping.cloud/images/large-screenshot.png" />
       </Head>
@@ -255,19 +250,19 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
             <div className="mt-2">
               <span className="font-medium">2. How accurate is it?</span>
               <p className="text-gray-700">
-                It can be considered fairly accurate for general public usage, but due to browser restrictions, this website uses a HTTP ping instead of a
-                TCP/ICMP ping. HTTP ping will always have an additional overhead, which can negatively impact the latency displayed here.
+                It can be considered fairly accurate for general comparison usage, but due to browser restrictions, this website uses a HTTP ping instead of a
+                TCP/ICMP ping. HTTP ping will always have an additional overhead, which will negatively impact the latency displayed here.
               </p>
             </div>
             <div className="mt-2">
               <span className="font-medium">3. Is it fair to compare different providers?</span>
               <p className="text-gray-700">
-                In most cases, no. Each provider uses a different HTTP web server which can add a few extra milliseconds. When pinging multiple providers
-                simultaneously, always keep in mind that some providers might actually have a slighly lower latency than what is currently displayed.
+                In most cases, no. Each provider uses a different HTTP web server and configuration that adds a few extra milliseconds. When pinging multiple providers
+                simultaneously, always keep in mind that some providers will actually have a slighly lower latency than what is currently displayed.
               </p>
             </div>
             <div className="mt-2">
-              <span className="font-medium">4. Any accurate alternative?</span>
+              <span className="font-medium">4. Is there a more acccurate alternative?</span>
               <p className="text-gray-700">Yes, you should use a ICMP/TCP tool for that.</p>
             </div>
             <div className="mt-2">
