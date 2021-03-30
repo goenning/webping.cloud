@@ -4,7 +4,7 @@
     "display_name": "Taiwan",
     "country": "TW",
     "location": "Taiwan",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://asia-east1-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -12,7 +12,7 @@
     "display_name": "Hong Kong",
     "country": "HK",
     "location": "Hong Kong",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://asia-east2-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -20,7 +20,7 @@
     "display_name": "Tokyo",
     "country": "JP",
     "location": "Tokyo",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://asia-northeast1-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -28,7 +28,7 @@
     "display_name": "Osaka",
     "country": "JP",
     "location": "Osaka",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://asia-northeast2-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -36,7 +36,7 @@
     "display_name": "Seoul",
     "country": "KR",
     "location": "Seoul",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://asia-northeast3-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -44,7 +44,7 @@
     "display_name": "Mumbai",
     "country": "IN",
     "location": "Mumbai",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://asia-south1-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -52,7 +52,7 @@
     "display_name": "Singapore",
     "country": "SG",
     "location": "Singapore",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://asia-southeast1-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -60,7 +60,7 @@
     "display_name": "Jakarta",
     "country": "ID",
     "location": "Jakarta",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://asia-southeast2-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -68,7 +68,7 @@
     "display_name": "Sydney",
     "country": "AU",
     "location": "Sydney",
-    "continent": "Oceania",
+    "geo": "Oceania",
     "ping_url": "http://australia-southeast1-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -76,7 +76,7 @@
     "display_name": "Finland",
     "country": "FI",
     "location": "Hamina",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://europe-north1-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -84,7 +84,7 @@
     "display_name": "Belgium",
     "country": "BE",
     "location": "Belgium",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://europe-west1-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -92,7 +92,7 @@
     "display_name": "London",
     "country": "UK",
     "location": "London",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://europe-west2-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -100,7 +100,7 @@
     "display_name": "Frankfurt",
     "country": "DE",
     "location": "Frankfurt",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://europe-west3-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -108,7 +108,7 @@
     "display_name": "Netherlands",
     "country": "NL",
     "location": "Netherlands",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://europe-west4-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -116,7 +116,7 @@
     "display_name": "Switzerland",
     "country": "CH",
     "location": "Switzerland",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://europe-west6-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -124,7 +124,7 @@
     "display_name": "Montreal",
     "country": "CA",
     "location": "Montreal",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://northamerica-northeast1-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -132,7 +132,7 @@
     "display_name": "São Paulo",
     "country": "BR",
     "location": "São Paulo",
-    "continent": "South America",
+    "geo": "South America",
     "ping_url": "http://southamerica-east1-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -140,7 +140,7 @@
     "display_name": "Iowa",
     "country": "US",
     "location": "Iowa",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://us-central1-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -148,7 +148,7 @@
     "display_name": "South Carolina",
     "country": "US",
     "location": "South Carolina",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://us-east1-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -156,7 +156,7 @@
     "display_name": "Virginia",
     "country": "US",
     "location": "Virginia",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://us-east4-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -164,7 +164,7 @@
     "display_name": "Oregon",
     "country": "US",
     "location": "Oregon",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://us-west1-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -172,7 +172,7 @@
     "display_name": "California",
     "country": "US",
     "location": "California",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://us-west2-a-gce.cloudharmony.net/probe/ping.js"
   },
   {
@@ -180,7 +180,7 @@
     "display_name": "Utah",
     "country": "US",
     "location": "Utah",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://us-west3-gce.cloudharmony.net/probe/ping.js"
   }
 ]

@@ -7,7 +7,7 @@ import { delay, ping } from '@app/fns/time'
 
 interface CloudPingProps {
   providers: CloudProvider[]
-  continents: Record<string, string[]>
+  geos: Record<string, string[]>
   countries: string[]
   initialState: LatencyState
 }
@@ -32,13 +32,13 @@ export async function getStaticProps(): Promise<GetStaticPropsResult<CloudPingPr
     props: {
       initialState,
       providers,
-      continents: Object.values(regions).reduce((prev, curr) => {
+      geos: Object.values(regions).reduce((prev, curr) => {
         for (const region of curr) {
-          if (!prev[region.continent]) {
-            prev[region.continent] = []
+          if (!prev[region.geo]) {
+            prev[region.geo] = []
           }
-          if (!prev[region.continent].includes(region.country)) {
-            prev[region.continent] = [...prev[region.continent], region.country]
+          if (!prev[region.geo].includes(region.country)) {
+            prev[region.geo] = [...prev[region.geo], region.country]
           }
         }
         return prev
@@ -140,12 +140,12 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
     })
   }
 
-  const toggleContinentFilter = (continent: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
+  const toggleGeographyFilter = (geo: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedCountries((values) => {
       if (event.target.checked) {
-        return [...new Set([...values, ...props.continents[continent]])]
+        return [...new Set([...values, ...props.geos[geo]])]
       } else {
-        return values.filter((x) => !props.continents[continent].includes(x))
+        return values.filter((x) => !props.geos[geo].includes(x))
       }
     })
   }
@@ -207,17 +207,17 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
             <h4 className="mt-4">Locations</h4>
 
             <div className="grid grid-cols-2 md:block">
-              {['North America', 'Middle East', 'Asia', 'Europe', 'South America', 'Oceania', 'Africa'].map((continent) => {
-                const allSelected = props.continents[continent].some((x) => selectedCountries.includes(x))
+              {['North America', 'Middle East', 'Asia', 'Europe', 'South America', 'Oceania', 'Africa'].map((geo) => {
+                const allSelected = props.geos[geo].some((x) => selectedCountries.includes(x))
                 return (
-                  <div key={continent} className="mr-3 md:mr-0">
+                  <div key={geo} className="mr-3 md:mr-0">
                     <label className="inline-flex cursor-pointer items-center">
-                      <input type="checkbox" className="form-checkbox cursor-pointer" checked={allSelected} onChange={toggleContinentFilter(continent)} />
-                      <h6 className="inline ml-1">{continent}</h6>
+                      <input type="checkbox" className="form-checkbox cursor-pointer" checked={allSelected} onChange={toggleGeographyFilter(geo)} />
+                      <h6 className="inline ml-1">{geo}</h6>
                     </label>
-                    <div key={continent}>
-                      {props.continents[continent].map((country, idx) => {
-                        const isLastCountry = idx === props.continents[continent].length - 1
+                    <div key={geo}>
+                      {props.geos[geo].map((country, idx) => {
+                        const isLastCountry = idx === props.geos[geo].length - 1
                         return (
                           <div key={country}>
                             <label className={`inline-flex cursor-pointer items-center ${isLastCountry && 'mb-4'}`}>

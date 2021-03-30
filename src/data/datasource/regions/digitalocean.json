@@ -4,7 +4,7 @@
     "display_name": "AMS2",
     "country": "NL",
     "location": "Amsterdam",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://speedtest-ams2.digitalocean.com/test_checksums.txt"
   },
   {
@@ -12,7 +12,7 @@
     "display_name": "AMS3",
     "country": "NL",
     "location": "Amsterdam",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://speedtest-ams3.digitalocean.com/test_checksums.txt"
   },
   {
@@ -20,7 +20,7 @@
     "display_name": "BLR1",
     "country": "IN",
     "location": "Bangalore",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://speedtest-blr1.digitalocean.com/test_checksums.txt"
   },
   {
@@ -28,7 +28,7 @@
     "display_name": "FRA1",
     "country": "DE",
     "location": "Frankfurt",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://speedtest-fra1.digitalocean.com/test_checksums.txt"
   },
   {
@@ -36,7 +36,7 @@
     "display_name": "LON1",
     "country": "UK",
     "location": "London",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://speedtest-lon1.digitalocean.com/test_checksums.txt"
   },
   {
@@ -44,7 +44,7 @@
     "display_name": "NYC1",
     "country": "US",
     "location": "New York",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://speedtest-nyc1.digitalocean.com/test_checksums.txt"
   },
   {
@@ -52,7 +52,7 @@
     "display_name": "NYC2",
     "country": "US",
     "location": "New York",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://speedtest-nyc2.digitalocean.com/test_checksums.txt"
   },
   {
@@ -60,7 +60,7 @@
     "display_name": "NYC3",
     "country": "US",
     "location": "New York",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://speedtest-nyc3.digitalocean.com/test_checksums.txt"
   },
   {
@@ -68,7 +68,7 @@
     "display_name": "SFO1",
     "country": "US",
     "location": "San Francisco",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://speedtest-sfo1.digitalocean.com/test_checksums.txt"
   },
   {
@@ -76,7 +76,7 @@
     "display_name": "SFO2",
     "country": "US",
     "location": "San Francisco",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://speedtest-sfo2.digitalocean.com/test_checksums.txt"
   },
   {
@@ -84,7 +84,7 @@
     "display_name": "SFO3",
     "country": "US",
     "location": "San Francisco",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://speedtest-sfo3.digitalocean.com/test_checksums.txt"
   },
   {
@@ -92,7 +92,7 @@
     "display_name": "SGP1",
     "country": "SG",
     "location": "Singapore",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://speedtest-sgp1.digitalocean.com/test_checksums.txt"
   },
   {
@@ -100,7 +100,7 @@
     "display_name": "TOR1",
     "country": "CA",
     "location": "Toronto",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://speedtest-tor1.digitalocean.com/test_checksums.txt"
   }
 ]

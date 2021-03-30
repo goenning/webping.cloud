@@ -10,7 +10,7 @@ export interface CloudRegion {
   display_name: string
   country: string
   location: string
-  continent: string
+  geo: string
   ping_url: string
 }
 

@@ -4,7 +4,7 @@
     "display_name": "East Asia",
     "country": "HK",
     "location": "Hong Kong",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://aveastasia.blob.core.windows.net/ping"
   },
   {
@@ -12,7 +12,7 @@
     "display_name": "Southeast Asia",
     "country": "SG",
     "location": "Singapore",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://avsoutheastasia.blob.core.windows.net/ping"
   },
   {
@@ -20,7 +20,7 @@
     "display_name": "Australia East",
     "country": "AU",
     "location": "New South Wales",
-    "continent": "Oceania",
+    "geo": "Oceania",
     "ping_url": "http://avaustraliaeast.blob.core.windows.net/ping"
   },
   {
@@ -28,7 +28,7 @@
     "display_name": "Australia Southeast",
     "country": "AU",
     "location": "Victoria",
-    "continent": "Oceania",
+    "geo": "Oceania",
     "ping_url": "http://avaustraliasoutheast.blob.core.windows.net/ping"
   },
   {
@@ -36,7 +36,7 @@
     "display_name": "Australia Central",
     "country": "AU",
     "location": "Canberra",
-    "continent": "Oceania",
+    "geo": "Oceania",
     "ping_url": "http://avaustraliacentral.blob.core.windows.net/ping"
   },
   {
@@ -44,42 +44,42 @@
     "display_name": "Australia Central 2",
     "country": "AU",
     "location": "Canberra",
-    "continent": "Oceania"
+    "geo": "Oceania"
   },
   {
     "key": "chinaeast",
     "display_name": "China East",
     "country": "CN",
     "location": "Shanghai",
-    "continent": "Asia"
+    "geo": "Asia"
   },
   {
     "key": "chinanorth",
     "display_name": "China North",
     "country": "CN",
     "location": "Beijing",
-    "continent": "Asia"
+    "geo": "Asia"
   },
   {
     "key": "chinaeast2",
     "display_name": "China East 2",
     "country": "CN",
     "location": "Shanghai",
-    "continent": "Asia"
+    "geo": "Asia"
   },
   {
     "key": "chinanorth2",
     "display_name": "China North 2",
     "country": "CN",
     "location": "Beijing",
-    "continent": "Asia"
+    "geo": "Asia"
   },
   {
     "key": "centralindia",
     "display_name": "Central India",
     "country": "IN",
     "location": "Pune",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://avcentralindia.blob.core.windows.net/ping"
   },
   {
@@ -87,14 +87,14 @@
     "display_name": "West India",
     "country": "IN",
     "location": "Mumbai",
-    "continent": "Asia"
+    "geo": "Asia"
   },
   {
     "key": "southindia",
     "display_name": "South India",
     "country": "IN",
     "location": "Chennai",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://avsouthindia.blob.core.windows.net/ping"
   },
   {
@@ -102,7 +102,7 @@
     "display_name": "Japan East",
     "country": "JP",
     "location": "Tokyo",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://avjapaneast.blob.core.windows.net/ping"
   },
   {
@@ -110,7 +110,7 @@
     "display_name": "Japan West",
     "country": "JP",
     "location": "Osaka",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://avjapanwest.blob.core.windows.net/ping"
   },
   {
@@ -118,7 +118,7 @@
     "display_name": "Korea Central",
     "country": "KR",
     "location": "Seoul",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://avkoreacentral.blob.core.windows.net/ping"
   },
   {
@@ -126,7 +126,7 @@
     "display_name": "Korea South",
     "country": "KR",
     "location": "Busan",
-    "continent": "Asia",
+    "geo": "Asia",
     "ping_url": "http://avkoreasouth.blob.core.windows.net/ping"
   },
   {
@@ -134,7 +134,7 @@
     "display_name": "North Europe",
     "country": "IE",
     "location": "Dublin",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://avnortheurope.blob.core.windows.net/ping"
   },
   {
@@ -142,7 +142,7 @@
     "display_name": "West Europe",
     "country": "NL",
     "location": "Amsterdam",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://avwesteurope.blob.core.windows.net/ping"
   },
   {
@@ -150,7 +150,7 @@
     "display_name": "France Central",
     "country": "FR",
     "location": "Paris",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://avfrancecentral.blob.core.windows.net/ping"
   },
   {
@@ -158,7 +158,7 @@
     "display_name": "France South",
     "country": "FR",
     "location": "Marseille",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://avfrancesouth.blob.core.windows.net/ping"
   },
   {
@@ -166,7 +166,7 @@
     "display_name": "UK West",
     "country": "UK",
     "location": "Cardiff",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://avukwest.blob.core.windows.net/ping"
   },
   {
@@ -174,7 +174,7 @@
     "display_name": "UK South",
     "country": "UK",
     "location": "London",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://avuksouth.blob.core.windows.net/ping"
   },
   {
@@ -182,7 +182,7 @@
     "display_name": "Germany West Central",
     "country": "DE",
     "location": "Frankfurt",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://avgermanywestcentral.blob.core.windows.net/ping"
   },
   {
@@ -190,7 +190,7 @@
     "display_name": "Germany North",
     "country": "DE",
     "location": "Berlin",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://speedtestden.blob.core.windows.net/ping"
   },
   {
@@ -198,7 +198,7 @@
     "display_name": "East US",
     "country": "US",
     "location": "Virginia",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://aveastus.blob.core.windows.net/ping"
   },
   {
@@ -206,7 +206,7 @@
     "display_name": "East US 2",
     "country": "US",
     "location": "Virginia",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://aveastus2.blob.core.windows.net/ping"
   },
   {
@@ -214,7 +214,7 @@
     "display_name": "Central US",
     "country": "US",
     "location": "Iowa",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://avcentralus.blob.core.windows.net/ping"
   },
   {
@@ -222,7 +222,7 @@
     "display_name": "North Central US",
     "country": "US",
     "location": "Illinois",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://avnorthcentralus.blob.core.windows.net/ping"
   },
   {
@@ -230,7 +230,7 @@
     "display_name": "South Central US",
     "country": "US",
     "location": "Texas",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://avsouthcentralus.blob.core.windows.net/ping"
   },
   {
@@ -238,7 +238,7 @@
     "display_name": "West Central US",
     "country": "US",
     "location": "Wyoming",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://avwestcentralus.blob.core.windows.net/ping"
   },
   {
@@ -246,7 +246,7 @@
     "display_name": "West US",
     "country": "US",
     "location": "California",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://avwestus.blob.core.windows.net/ping"
   },
   {
@@ -254,7 +254,7 @@
     "display_name": "West US 2",
     "country": "US",
     "location": "Washington",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://avwestus2.blob.core.windows.net/ping"
   },
   {
@@ -262,7 +262,7 @@
     "display_name": "Canada East",
     "country": "CA",
     "location": "Quebec City",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://avcanadaeast.blob.core.windows.net/ping"
   },
   {
@@ -270,7 +270,7 @@
     "display_name": "Canada Central",
     "country": "CA",
     "location": "Toronto",
-    "continent": "North America",
+    "geo": "North America",
     "ping_url": "http://avcanadacentral.blob.core.windows.net/ping"
   },
   {
@@ -278,7 +278,7 @@
     "display_name": "Brazil South",
     "country": "BR",
     "location": "Sao Paulo",
-    "continent": "South America",
+    "geo": "South America",
     "ping_url": "http://avbrazilsouth.blob.core.windows.net/ping"
   },
   {
@@ -286,7 +286,7 @@
     "display_name": "Brazil Southeast",
     "country": "BR",
     "location": "Rio de Janeiro",
-    "continent": "South America",
+    "geo": "South America",
     "ping_url": "http://avbrazilsoutheast.blob.core.windows.net/ping"
   },
   {
@@ -294,7 +294,7 @@
     "display_name": "South Africa North",
     "country": "ZA",
     "location": "Johannesburg",
-    "continent": "Africa",
+    "geo": "Africa",
     "ping_url": "http://avsouthafricanorth.blob.core.windows.net/ping"
   },
   {
@@ -302,7 +302,7 @@
     "display_name": "South Africa West",
     "country": "ZA",
     "location": "Cape Town",
-    "continent": "Africa",
+    "geo": "Africa",
     "ping_url": "http://avsouthafricawest.blob.core.windows.net/ping"
   },
   {
@@ -310,7 +310,7 @@
     "display_name": "Norway West",
     "country": "NO",
     "location": "Oslo",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://avnorwayeast.blob.core.windows.net/ping"
   },
   {
@@ -318,7 +318,7 @@
     "display_name": "Switzerland West",
     "country": "CH",
     "location": "Geneva",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://speedtestchw.blob.core.windows.net/ping"
   },
   {
@@ -326,7 +326,7 @@
     "display_name": "Switzerland North",
     "country": "CH",
     "location": "Zürich",
-    "continent": "Europe",
+    "geo": "Europe",
     "ping_url": "http://avswitzerlandnorth.blob.core.windows.net/ping"
   },
   {
@@ -334,7 +334,7 @@
     "display_name": "UAE Central",
     "country": "AE",
     "location": "Abu Dhabi",
-    "continent": "Middle East",
+    "geo": "Middle East",
     "ping_url": "http://avuaecentral.blob.core.windows.net/ping"
   },
   {
@@ -342,7 +342,7 @@
     "display_name": "UAE North",
     "country": "AE",
     "location": "Dubai",
-    "continent": "Middle East",
+    "geo": "Middle East",
     "ping_url": "http://avuaenorth.blob.core.windows.net/ping"
   }
 ]

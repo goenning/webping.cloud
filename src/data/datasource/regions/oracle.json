@@ -3,7 +3,7 @@
     "display_name": "Australia East (Sydney)",
     "key": "ap-sydney-1",
     "country": "AU",
-    "continent": "Oceania",
+    "geo": "Oceania",
     "location": "Sydney",
     "ping_url": "https://objectstorage.ap-sydney-1.oraclecloud.com/ping"
   },
@@ -11,7 +11,7 @@
     "display_name": "Australia Southeast (Melbourne)",
     "key": "ap-melbourne-1",
     "country": "AU",
-    "continent": "Oceania",
+    "geo": "Oceania",
     "location": "Melbourne",
     "ping_url": "https://objectstorage.ap-melbourne-1.oraclecloud.com/ping"
   },
@@ -19,7 +19,7 @@
     "display_name": "Brazil East (Sao Paulo)",
     "key": "sa-saopaulo-1",
     "country": "BR",
-    "continent": "South America",
+    "geo": "South America",
     "location": "Sao Paulo",
     "ping_url": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/ping"
   },
@@ -27,7 +27,7 @@
     "display_name": "Canada Southeast (Montreal)",
     "key": "ca-montreal-1",
     "country": "CA",
-    "continent": "North America",
+    "geo": "North America",
     "location": "Montreal",
     "ping_url": "https://objectstorage.ca-montreal-1.oraclecloud.com/ping"
   },
@@ -35,7 +35,7 @@
     "display_name": "Canada Southeast (Toronto)",
     "key": "ca-toronto-1",
     "country": "CA",
-    "continent": "North America",
+    "geo": "North America",
     "location": "Toronto",
     "ping_url": "https://objectstorage.ca-toronto-1.oraclecloud.com/ping"
   },
@@ -43,7 +43,7 @@
     "display_name": "Chile (Santiago)",
     "key": "sa-santiago-1",
     "country": "CL",
-    "continent": "South America",
+    "geo": "South America",
     "location": "Santiago",
     "ping_url": "https://objectstorage.sa-santiago-1.oraclecloud.com/ping"
   },
@@ -51,7 +51,7 @@
     "display_name": "Germany Central (Frankfurt)",
     "key": "eu-frankfurt-1",
     "country": "DE",
-    "continent": "Europe",
+    "geo": "Europe",
     "location": "Frankfurt",
     "ping_url": "https://objectstorage.eu-frankfurt-1.oraclecloud.com/ping"
   },
@@ -59,7 +59,7 @@
     "display_name": "India South (Hyderabad)",
     "key": "ap-hyderabad-1",
     "country": "IN",
-    "continent": "Asia",
+    "geo": "Asia",
     "location": "Hyderabad",
     "ping_url": "https://objectstorage.ap-hyderabad-1.oraclecloud.com/ping"
   },
@@ -67,7 +67,7 @@
     "display_name": "India West (Mumbai)",
     "key": "ap-mumbai-1",
     "country": "IN",
-    "continent": "Hyderabad",
+    "geo": "Hyderabad",
     "location": "Mumbai",
     "ping_url": "https://objectstorage.ap-mumbai-1.oraclecloud.com/ping"
   },
@@ -75,7 +75,7 @@
     "display_name": "Japan Central (Osaka)",
     "key": "ap-osaka-1",
     "country": "JP",
-    "continent": "Asia",
+    "geo": "Asia",
     "location": "Osaka",
     "ping_url": "https://objectstorage.ap-osaka-1.oraclecloud.com/ping"
   },
@@ -83,7 +83,7 @@
     "display_name": "Japan East (Tokyo)",
     "key": "ap-tokyo-1",
     "country": "JP",
-    "continent": "Asia",
+    "geo": "Asia",
     "location": "Tokyo",
     "ping_url": "https://objectstorage.ap-tokyo-1.oraclecloud.com/ping"
   },
@@ -91,7 +91,7 @@
     "display_name": "Netherlands Northwest (Amsterdam)",
     "key": "eu-amsterdam-1",
     "country": "NL",
-    "continent": "Europe",
+    "geo": "Europe",
     "location": "Amsterdam",
     "ping_url": "https://objectstorage.eu-amsterdam-1.oraclecloud.com/ping"
   },
@@ -99,7 +99,7 @@
     "display_name": "Saudi Arabia West (Jeddah)",
     "key": "me-jeddah-1",
     "country": "SA",
-    "continent": "Middle East",
+    "geo": "Middle East",
     "location": "Jeddah",
     "ping_url": "https://objectstorage.me-jeddah-1.oraclecloud.com/ping"
   },
@@ -107,7 +107,7 @@
     "display_name": "South Korea Central (Seoul)",
     "key": "ap-seoul-1",
     "country": "KR",
-    "continent": "Asia",
+    "geo": "Asia",
     "location": "Seoul",
     "ping_url": "https://objectstorage.ap-seoul-1.oraclecloud.com/ping"
   },
@@ -115,7 +115,7 @@
     "display_name": "South Korea North (Chuncheon)",
     "key": "ap-chuncheon-1",
     "country": "KR",
-    "continent": "Asia",
+    "geo": "Asia",
     "location": "Chuncheon",
     "ping_url": "https://objectstorage.ap-chuncheon-1.oraclecloud.com/ping"
   },
@@ -123,7 +123,7 @@
     "display_name": "Switzerland North (Zurich)",
     "key": "eu-zurich-1",
     "country": "CH",
-    "continent": "Europe",
+    "geo": "Europe",
     "location": "Zurich",
     "ping_url": "https://objectstorage.eu-zurich-1.oraclecloud.com/ping"
   },
@@ -131,7 +131,7 @@
     "display_name": "UAE East (Dubai)",
     "key": "me-dubai-1",
     "country": "AE",
-    "continent": "Middle East",
+    "geo": "Middle East",
     "location": "Dubai",
     "ping_url": "https://objectstorage.me-dubai-1.oraclecloud.com/ping"
   },
@@ -139,7 +139,7 @@
     "display_name": "UK South (London)",
     "key": "uk-london-1",
     "country": "UK",
-    "continent": "Europe",
+    "geo": "Europe",
     "location": "London",
     "ping_url": "https://objectstorage.uk-london-1.oraclecloud.com/ping"
   },
@@ -147,7 +147,7 @@
     "display_name": "UK West (Newport)",
     "key": "uk-cardiff-1",
     "country": "UK",
-    "continent": "Europe",
+    "geo": "Europe",
     "location": "Newport",
     "ping_url": "https://objectstorage.uk-cardiff-1.oraclecloud.com/ping"
   },
@@ -155,7 +155,7 @@
     "display_name": "US East (Ashburn)",
     "key": "us-ashburn-1",
     "country": "US",
-    "continent": "North America",
+    "geo": "North America",
     "location": "Ashburn",
     "ping_url": "https://objectstorage.us-ashburn-1.oraclecloud.com/ping"
   },
@@ -163,7 +163,7 @@
     "display_name": "US West (Phoenix)",
     "key": "us-phoenix-1",
     "country": "US",
-    "continent": "North America",
+    "geo": "North America",
     "location": "Phoenix",
     "ping_url": "https://objectstorage.us-phoenix-1.oraclecloud.com/ping"
   },
@@ -171,7 +171,7 @@
     "display_name": "US West (San Jose)",
     "key": "us-sanjose-1",
     "country": "US",
-    "continent": "North America",
+    "geo": "North America",
     "location": "San Jose",
     "ping_url": "https://objectstorage.us-sanjose-1.oraclecloud.com/ping"
   }

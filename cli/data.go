@@ -6,18 +6,18 @@ import (
 )
 
 type CloudProvider struct {
-	Key string `json:"key"`
-	DisplayName string`json:"display_name"`
-	Regions []CloudRegion `json:"regions"`
+	Key         string        `json:"key"`
+	DisplayName string        `json:"display_name"`
+	Regions     []CloudRegion `json:"regions"`
 }
 
 type CloudRegion struct {
-	Key string `json:"key"`
+	Key         string `json:"key"`
 	DisplayName string `json:"display_name"`
-	Country string `json:"country"`
-	Location string `json:"location"`
-	Continent string `json:"continent"`
-	PingURL string `json:"ping_url"`
+	Country     string `json:"country"`
+	Location    string `json:"location"`
+	Geography   string `json:"geo"`
+	PingURL     string `json:"ping_url"`
 }
 
 func getCloudProviders() ([]CloudProvider, error) {
