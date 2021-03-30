@@ -30,3 +30,11 @@ h6 {
   @apply rounded border-gray-300 text-blue-600 shadow-sm;
   @apply focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
 }
+
+.bt-tweet {
+  background-color: #1DA1F2;
+}
+
+.bt-tweet:hover {
+  background-color: #0c85d0;
+}
