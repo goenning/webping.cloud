@@ -12,11 +12,15 @@
         "display_name": "Google Cloud Platform"
     },
     {
-        "key": "digitalocean",
-        "display_name": "Digital Ocean"
-    },
-    {
         "key": "alibaba",
         "display_name": "Alibaba Cloud"
+    },
+    {
+        "key": "oracle",
+        "display_name": "Oracle Cloud"
+    },
+    {
+        "key": "digitalocean",
+        "display_name": "Digital Ocean"
     }
 ]
