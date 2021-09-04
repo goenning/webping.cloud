@@ -270,7 +270,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
               </p>
             </div>
             <div className="mt-3">
-              <span className="font-medium">5. Is there a more acccurate alternative?</span>
+              <span className="font-medium">5. Is there a more accurate alternative?</span>
               <p className="text-gray-700">Yes, you should use a ICMP/TCP tool for that.</p>
             </div>
             <div className="mt-8">
