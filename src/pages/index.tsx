@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
-import { CloudProvider, CloudRegion, getAllCloudRegions, getAllProviders } from '@app/data'
 import { GetStaticPropsResult } from 'next'
+import { CloudProvider, CloudRegion, getAllCloudRegions, getAllProviders } from '@app/data'
 import { CloudProviderLogo, CountryFlag, CountryName } from '@app/components'
 import { delay, ping } from '@app/fns/time'
 
@@ -331,7 +331,7 @@ export default function CloudPing(props: CloudPingProps): JSX.Element {
         {tweetText && (
           <a
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             className="inline-block fixed bottom-4 right-4"
             href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`}
           >

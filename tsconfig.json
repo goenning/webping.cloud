@@ -20,12 +20,23 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@app/data": ["src/data"],
-      "@app/data/*": ["src/data/*"],
-      "@app/components": ["src/components/index"],
-      "@app/components/*": ["src/components/*"],
-      "@app/fns/*": ["src/fns/*"]
-    }
+      "@app/data": [
+        "src/data"
+      ],
+      "@app/data/*": [
+        "src/data/*"
+      ],
+      "@app/components": [
+        "src/components/index"
+      ],
+      "@app/components/*": [
+        "src/components/*"
+      ],
+      "@app/fns/*": [
+        "src/fns/*"
+      ]
+    },
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
