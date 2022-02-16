@@ -104,14 +104,6 @@
     "ping_url": "http://s3.mon01.cloud-object-storage.appdomain.cloud"
   },
   {
-    "key": "osl01",
-    "display_name": "Oslo, Norway",
-    "country": "NO",
-    "location": "Oslo",
-    "geo": "Europe",
-    "ping_url": "http://s3.osl01.cloud-object-storage.appdomain.cloud"
-  },
-  {
     "key": "par01",
     "display_name": "Paris, France",
     "country": "FR",
