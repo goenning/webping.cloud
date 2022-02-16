@@ -19,7 +19,6 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
 
     // Prettier plugin and recommended rules
-    'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
   ],
   rules: {
