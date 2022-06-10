@@ -72,52 +72,84 @@
     "ping_url": "http://australia-southeast1-gce.cloudharmony.net/probe/ping.js"
   },
   {
+    "key": "europe-central2",
+    "display_name": "Poland",
+    "country": "PL",
+    "location": "Warsaw",
+    "geo": "Europe",
+    "ping_url": "https://europe-central2-5tkroniexa-lm.a.run.app/api/ping"
+  },
+  {
     "key": "europe-north1",
     "display_name": "Finland",
     "country": "FI",
     "location": "Hamina",
     "geo": "Europe",
-    "ping_url": "http://europe-north1-gce.cloudharmony.net/probe/ping.js"
+    "ping_url": "https://europe-north1-5tkroniexa-lz.a.run.app/api/ping"
+  },
+  {
+    "key": "europe-southwest1",
+    "display_name": "Spain",
+    "country": "ES",
+    "location": "Madrid",
+    "geo": "Europe",
+    "ping_url": "https://europe-southwest1-5tkroniexa-no.a.run.app/api/ping"
   },
   {
     "key": "europe-west1",
     "display_name": "Belgium",
     "country": "BE",
-    "location": "Belgium",
+    "location": "Saint-Ghislain",
     "geo": "Europe",
-    "ping_url": "http://europe-west1-gce.cloudharmony.net/probe/ping.js"
+    "ping_url": "https://europe-west1-5tkroniexa-ew.a.run.app/api/ping"
   },
   {
     "key": "europe-west2",
-    "display_name": "London",
+    "display_name": "England",
     "country": "UK",
     "location": "London",
     "geo": "Europe",
-    "ping_url": "http://europe-west2-gce.cloudharmony.net/probe/ping.js"
+    "ping_url": "https://europe-west2-5tkroniexa-nw.a.run.app/api/ping"
   },
   {
     "key": "europe-west3",
-    "display_name": "Frankfurt",
+    "display_name": "Germany",
     "country": "DE",
     "location": "Frankfurt",
     "geo": "Europe",
-    "ping_url": "http://europe-west3-gce.cloudharmony.net/probe/ping.js"
+    "ping_url": "https://europe-west3-5tkroniexa-ey.a.run.app/api/ping"
   },
   {
     "key": "europe-west4",
     "display_name": "Netherlands",
     "country": "NL",
-    "location": "Netherlands",
+    "location": "Eemshaven",
     "geo": "Europe",
-    "ping_url": "http://europe-west4-gce.cloudharmony.net/probe/ping.js"
+    "ping_url": "https://europe-west4-5tkroniexa-ez.a.run.app/api/ping"
   },
   {
     "key": "europe-west6",
     "display_name": "Switzerland",
     "country": "CH",
-    "location": "Switzerland",
+    "location": "Zürich",
     "geo": "Europe",
-    "ping_url": "http://europe-west6-gce.cloudharmony.net/probe/ping.js"
+    "ping_url": "https://europe-west6-5tkroniexa-oa.a.run.app/api/ping"
+  },
+  {
+    "key": "europe-west8",
+    "display_name": "Italy",
+    "country": "IT",
+    "location": "Milan",
+    "geo": "Europe",
+    "ping_url": "https://europe-west8-5tkroniexa-oc.a.run.app/api/ping"
+  },
+  {
+    "key": "europe-west9",
+    "display_name": "France",
+    "country": "FR",
+    "location": "Paris",
+    "geo": "Europe",
+    "ping_url": "https://europe-west9-5tkroniexa-od.a.run.app/api/ping"
   },
   {
     "key": "northamerica-northeast1",
