@@ -23,6 +23,8 @@ export async function ping(url: string): Promise<number> {
       resolve(new Date().getTime() - start)
     }
     img.onerror = img.onload = cb
-    img.src = url.startsWith('https://dynamodb') ? url : `${url}?${start}`
+
+    // some endpoints require a querystring param to avoid caching, while others don't work when you add them
+    img.src = url.startsWith('https://dynamodb') || url.includes('run.app') ? url : `${url}?${start}`
   })
 }
