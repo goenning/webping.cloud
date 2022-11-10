@@ -128,6 +128,14 @@
     "ping_url": "http://dynamodb.eu-central-1.amazonaws.com/ping"
   },
   {
+    "key": "eu-central-2",
+    "display_name": "EU (Zuerich)",
+    "country": "CH",
+    "location": "Zuerich",
+    "geo": "Europe",
+    "ping_url": "http://dynamodb.eu-central-2.amazonaws.com/ping"
+  },
+  {
     "key": "eu-west-1",
     "display_name": "EU (Ireland)",
     "country": "IE",
